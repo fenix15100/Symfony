@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76667e67-5fb2-4133-a089-d7763e877a25" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pepelachupa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebagit" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ssass" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssass" afterPath="$PROJECT_DIR$/ssass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +21,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ssass" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ssass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -34,6 +39,12 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -234,7 +245,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517059629007</updated>
       <workItem from="1517059631469" duration="1431000" />
-      <workItem from="1517061252693" duration="743000" />
+      <workItem from="1517061252693" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1517061833031</created>
@@ -257,11 +268,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517061993864</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hello">
+      <created>1517062005065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517062005065</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2174000" />
+    <option name="totallyTimeSpent" value="2221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,6 +351,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ssass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pepelachupa">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -349,11 +375,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
