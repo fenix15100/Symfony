@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76667e67-5fb2-4133-a089-d7763e877a25" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pepelachupa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebagit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ssass" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +19,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -30,6 +28,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,7 +253,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517059629007</updated>
       <workItem from="1517059631469" duration="1431000" />
-      <workItem from="1517061252693" duration="790000" />
+      <workItem from="1517061252693" duration="858000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1517061833031</created>
@@ -275,11 +283,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517062005065</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hello">
+      <created>1517062062858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517062062858</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2221000" />
+    <option name="totallyTimeSpent" value="2289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,6 +398,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
