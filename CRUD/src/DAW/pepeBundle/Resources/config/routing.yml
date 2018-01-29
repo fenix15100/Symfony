@@ -1,0 +1,13 @@
+da_wpepe_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DAWpepeBundle:Default:index }
+
+
+articulos:
+  path: /articulos
+  defaults: { _controller: DAWpepeBundle:Default:articulos }
+
+
+articulo:
+  path: /articulo/{id}
+  defaults: { _controller: DAWpepeBundle:Default:articulo }

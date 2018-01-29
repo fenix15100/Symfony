@@ -1,0 +1,4 @@
+da_wpepe:
+    resource: "@DAWpepeBundle/Resources/config/routing.yml"
+    prefix:   /
+

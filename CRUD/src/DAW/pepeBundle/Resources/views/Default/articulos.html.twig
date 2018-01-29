@@ -1,0 +1,12 @@
+<h1>Listado de Articulos</h1>
+{% for articulo in articulos %}
+<ul>
+    {% if articulo.title|length >9 %}
+    <li>{{ articulo.id |lower}} {{ articulo.title|lower }} {{ articulo.created|lower }}</li>
+
+</ul>
+
+{% else %}
+    {{ 'No hay articulos' }}
+
+{% endfor %}

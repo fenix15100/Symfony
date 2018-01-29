@@ -1,0 +1,7 @@
+parameters:
+#    da_wpepe.example.class: DAW\pepeBundle\Example
+
+services:
+#    da_wpepe.example:
+#        class: %da_wpepe.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
