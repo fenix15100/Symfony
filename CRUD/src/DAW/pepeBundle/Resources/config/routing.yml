@@ -8,6 +8,30 @@ articulos:
   defaults: { _controller: DAWpepeBundle:Default:articulos }
 
 
+
 articulo:
   path: /articulo/{id}
   defaults: { _controller: DAWpepeBundle:Default:articulo }
+
+
+#CRUD BD
+articulo_listar:
+    path:  /articulos/listar
+    defaults: { _controller: DAWpepeBundle:Articulos:listar }
+
+articulo_crear:
+    path:  /articulos/crear
+    defaults: { _controller: DAWpepeBundle:Articulos:crear }
+
+articulo_editar:
+    path:  /articulos/editar/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:editar }
+
+articulo_visualizar:
+    path:  /articulos/visualizar/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:visualizar }
+
+articulo_borrar:
+    path:  /articulos/borrar/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:borrar }
+
