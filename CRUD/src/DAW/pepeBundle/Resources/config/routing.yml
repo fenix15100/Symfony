@@ -16,22 +16,22 @@ articulo:
 
 #CRUD BD
 articulo_listar:
-    path:  /articulos/listar
-    defaults: { _controller: DAWpepeBundle:Articulos:listar }
+    path:  /articulos/list
+    defaults: { _controller: DAWpepeBundle:Articulos:list }
 
 articulo_crear:
-    path:  /articulos/crear
-    defaults: { _controller: DAWpepeBundle:Articulos:crear }
+    path:  /articulos/new
+    defaults: { _controller: DAWpepeBundle:Articulos:new }
 
 articulo_editar:
-    path:  /articulos/editar/{id}
-    defaults: { _controller: DAWpepeBundle:Articulos:editar }
+    path:  /articulos/edit/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:edit }
 
 articulo_visualizar:
-    path:  /articulos/visualizar/{id}
-    defaults: { _controller: DAWpepeBundle:Articulos:visualizar }
+    path:  /articulos/show/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:show }
 
 articulo_borrar:
-    path:  /articulos/borrar/{id}
-    defaults: { _controller: DAWpepeBundle:Articulos:borrar }
+    path:  /articulos/erase/{id}
+    defaults: { _controller: DAWpepeBundle:Articulos:erase }
 
