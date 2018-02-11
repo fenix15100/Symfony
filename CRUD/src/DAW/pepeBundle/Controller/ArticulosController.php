@@ -3,6 +3,7 @@
 namespace DAW\pepeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use DAW\pepeBundle\Entity\Articles;
 
 class ArticulosController extends Controller
 
@@ -13,7 +14,7 @@ class ArticulosController extends Controller
 
         $articulos = $em->getRepository('DAWpepeBundle:Articles')->findAll();
 
-        return $this->render('DAWpepeBundle:Articulos:Articulos/showall.html.twig', array('articulos'=>$articulos));
+        return $this->render('DAWpepeBundle:Articulos:showall.html.twig', array('articulos'=>$articulos));
     }
 
     public function newAction()
@@ -32,7 +33,7 @@ class ArticulosController extends Controller
         $em->persist($articulo);
         $em->flush();
 
-        return $this->render('DAWpepeBundle:Articulos:Articulos/show.html.twig', array('articulo'=>$articulo));
+        return $this->render('DAWpepeBundle:Articulos:show.html.twig', array('articulo'=>$articulo));
 
     }
 
@@ -48,7 +49,7 @@ class ArticulosController extends Controller
         $em->persist($articulo);
         $em->flush();
 
-        return $this->render('DAWpepeBundle:Articulos:Articulos/show.html.twig', array('articulo' => $articulo));
+        return $this->render('DAWpepeBundle:Articulos:show.html.twig', array('articulo' => $articulo));
 
     }
 
@@ -58,7 +59,7 @@ class ArticulosController extends Controller
 
         $articulo = $em->getRepository('DAWpepeBundle:Articles')->find($id);
 
-        return $this->render('DAWpepeBundle:Articulos:Articulos/show.html.twig', array('articulo' => $articulo));
+        return $this->render('DAWpepeBundle:Articulos:show.html.twig', array('articulo' => $articulo));
 
 
     }
