@@ -1,0 +1,22 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}DAWpepeBundle:pr1:pr1{% endblock %}
+
+{% block body %}
+<h1>Welcome to the pr1:pr1 page</h1>
+
+    <table border="1">
+        <tr>
+            <th>Campo</th>
+            <th>Longitud</th>
+        </tr>
+        {% for campo in vector %}
+
+            <tr>
+                <td>{{ campo }}</td>
+                <td>{{ campo|length }}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -35,3 +35,7 @@ articulo_borrar:
     path:  /articulos/erase/{id}
     defaults: { _controller: DAWpepeBundle:Articulos:erase }
 
+
+pr1:
+    path:     /pr1/{string}
+    defaults: { _controller: DAWpepeBundle:pr1:pr1 }
