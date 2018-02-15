@@ -19,18 +19,55 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <file leaf-file-name="Articles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="56" column="78" lean-forward="false" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+              <folding>
+                <element signature="e#41#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Forms/ArticleType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+              <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="30" />
+              <folding>
+                <element signature="e#38#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticulosController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#45#102#0#PHP" expanded="true" />
+                <element signature="e#1104#1143#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -50,19 +87,23 @@
       <list>
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Default/articulo.html.twig" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Default/articulos.html.twig" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Comments.php" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/showall.html.twig" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Controller/pr1Controller.php" />
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/pr1/pr1.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/web/config.php" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Controller/pr1Controller.php" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Form/ArticleType.php" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Forms/ArticleType.php" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php" />
       </list>
     </option>
   </component>
@@ -126,7 +167,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,40 +212,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pepeBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAW" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pepeBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pr1" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,42 +327,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAW" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pepeBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Forms" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,31 +443,32 @@
       <workItem from="1517844053526" duration="6047000" />
       <workItem from="1518111630838" duration="2686000" />
       <workItem from="1518348728663" duration="5683000" />
+      <workItem from="1518713260657" duration="6236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22768000" />
+    <option name="totallyTimeSpent" value="29004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3409742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34598854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44351465" sideWeight="0.5028653" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146443" sideWeight="0.49713466" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -501,15 +479,36 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#45#102#0#PHP" expanded="true" />
+            <element signature="e#1104#1143#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -517,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,14 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2083">
-          <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/add.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/delete.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/actualizar.html.twig" />
@@ -660,19 +650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,35 +668,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="8" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/pr1/pr1.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/pr1/pr1.html.twig" />
+    <entry file="file://$PROJECT_DIR$/web/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/pr1Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
-          <folding>
-            <element signature="e#45#102#0#PHP" expanded="true" />
-            <element signature="e#393#426#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -726,6 +685,61 @@
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/pr1Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="56" column="78" lean-forward="false" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+          <folding>
+            <element signature="e#41#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Articulos/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Forms/ArticleType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="e#38#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Controller/ArticulosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#102#0#PHP" expanded="true" />
+            <element signature="e#1104#1143#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,13 +4,16 @@ namespace DAW\pepeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use DAW\pepeBundle\Entity\Articles;
+use DAW\pepeBundle\Forms\ArticleType;
+
+
 
 class ArticulosController extends Controller
 
 {
     public function listAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
 
         $articulos = $em->getRepository('DAWpepeBundle:Articles')->findAll();
 
@@ -19,23 +22,39 @@ class ArticulosController extends Controller
 
     public function newAction()
     {
+        $request = $this->getRequest();
         $articulo = new Articles();
-        $articulo->setTitle('Articulo de alexsander');
-        $articulo->setAuthor('John Doe');
-        $articulo->setContent('Contenido');
-        $articulo->setTags('ejemplo');
-        $articulo->setCreated(new \DateTime());
-        $articulo->setUpdated(new \DateTime());
-        $articulo->setSlug('articulo-de-alexsander');
-        $articulo->setCategory('ejemplo');
+        $form = $this->createForm(new ArticleType(), $articulo);
 
-        $em = $this->getDoctrine()->getEntityManager();
-        $em->persist($articulo);
-        $em->flush();
 
-        return $this->render('DAWpepeBundle:Articulos:show.html.twig', array('articulo'=>$articulo));
+        if($request->getMethod() == 'POST')
+        {
+
+            $form->handleRequest($request);
+
+
+            if($form->isValid())
+            {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($articulo);
+                $em->flush();
+
+                return $this->redirect($this->generateURL('articulo_listar'));
+            }
+        }
+
+        return $this->render('DAWpepeBundle:Articulos:new.html.twig', array(
+            'form' => $form->createView(),
+        ));
+
+
+
 
     }
+
+
+
 
     public function editAction($id)
     {

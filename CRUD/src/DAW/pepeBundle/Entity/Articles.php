@@ -3,6 +3,7 @@
 namespace DAW\pepeBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Articles
@@ -53,6 +54,8 @@ class Articles
      * @var \DateTime
      *
      * @ORM\Column(name="created", type="date")
+     * @Assert\NotNull(message="El articulo debe tener una fecha de creacion")
+     *
      */
     private $created;
 
@@ -60,6 +63,8 @@ class Articles
      * @var \DateTime
      *
      * @ORM\Column(name="updated", type="date")
+     *
+     *
      */
     private $updated;
 

@@ -23,6 +23,8 @@ articulo_crear:
     path:  /articulos/new
     defaults: { _controller: DAWpepeBundle:Articulos:new }
 
+
+
 articulo_editar:
     path:  /articulos/edit/{id}
     defaults: { _controller: DAWpepeBundle:Articulos:edit }
