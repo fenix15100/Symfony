@@ -10,7 +10,12 @@ class ArticleType extends AbstractType
     {
         $builder->add('title')
             ->add('author')
-            ->add('created');
+            ->add('created')
+            ->add('content')
+            ->add('tags')
+            ->add('updated')
+            ->add('slug')
+            ->add('category');
     }
     public function getName()
     {
