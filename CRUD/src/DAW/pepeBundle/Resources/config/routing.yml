@@ -45,5 +45,6 @@ pr1:
 #ALUMNE CRUD
 
 
-
-
+DawpepeBundle_Alumne:
+  resource: "@DAWpepeBundle/Resources/config/Entity_routing/alumne.yml"
+  prefix: /alumne

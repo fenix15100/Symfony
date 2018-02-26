@@ -1,0 +1,7 @@
+alumne_new:
+    path:     /new
+    defaults: { _controller: DAWpepeBundle:Alumnes:new }
+
+alumne_list:
+    path:     /
+    defaults: { _controller: DAWpepeBundle:Alumnes:list }

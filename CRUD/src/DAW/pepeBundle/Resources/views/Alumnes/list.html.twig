@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}DAWpepeBundle:Alumnes:list{% endblock %}
+
+{% block body %}
+    <h1>Listado de Alumnos</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Observacions</th>
+            <th>DataNaixament</th>
+            <th>Edat</th>
+            <th>MajorEdat</th>
+            <th>NotaMitja</th>
+            <th>DataMatriculacion</th>
+
+
+        </tr>
+        {% for alumne in alumnes %}
+            <tr>
+                <td>{{ alumne.id }}</td>
+                <td>{{ alumne.nom }}</td>
+                <td>{{ alumne.observacions }}</td>
+                <td>{{ alumne.dataNaixement | date('d-m-Y')}}</td>
+                <td>{{ alumne.edat }}</td>
+                <td>{{ alumne.majorEdat }}</td>
+                <td>{{ alumne.notaMitja }}</td>
+                <td>{{ alumne.dataMatriculacion | date('d-m-Y') }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
