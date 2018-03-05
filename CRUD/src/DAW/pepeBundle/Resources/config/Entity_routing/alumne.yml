@@ -5,3 +5,12 @@ alumne_new:
 alumne_list:
     path:     /
     defaults: { _controller: DAWpepeBundle:Alumnes:list }
+
+alumne_edit:
+    path:     /edit/{id}
+    defaults: { _controller: DAWpepeBundle:Alumnes:edit }
+
+alumne_erase:
+    path:     /erase/{id}
+    defaults: { _controller: DAWpepeBundle:Alumnes:erase }
+    methods:    [DELETE]

@@ -3,8 +3,7 @@
 {% block title %}DAWpepeBundle:Alumnes:new{% endblock %}
 
 {% block body %}
-    <form action="{{ path('alumne_new') }}" method="post">
-        {{ form_widget(form) }}
-        <input type="submit" />
-    </form>
+    {{ form_start(form)}}
+    {{ form_widget(form) }}
+
 {% endblock %}

@@ -14,6 +14,7 @@
             <th>MajorEdat</th>
             <th>NotaMitja</th>
             <th>DataMatriculacion</th>
+            <th>Acciones</th>
 
 
         </tr>
@@ -27,7 +28,16 @@
                 <td>{{ alumne.majorEdat }}</td>
                 <td>{{ alumne.notaMitja }}</td>
                 <td>{{ alumne.dataMatriculacion | date('d-m-Y') }}</td>
+                <td><a href={{ path('alumne_edit',{'id': alumne.id})}}>Edit</a>
+                    <form action="{{ path('alumne_erase',{'id': alumne.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="submit" value="Eliminar" />
+                    </form>
+                </td>
             </tr>
         {% endfor %}
+        <tr>
+            <td><a href={{ path('alumne_new')}}>Nuevo Alumno</a></td>
+        </tr>
     </table>
 {% endblock %}

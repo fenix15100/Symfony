@@ -16,9 +16,10 @@ class AlumneType extends AbstractType
             ->add('observacions')
             ->add('dataNaixement')
             ->add('edat')
-            ->add('majorEdat',array('required' => false))
+            ->add('majorEdat','checkbox',array('required'=>false))
             ->add('notaMitja')
-            ->add('dataMatriculacion');
+            ->add('dataMatriculacion')
+            ->add('submit','submit',array('label'=>'Enviar'));
 
     }
     public function getName()
