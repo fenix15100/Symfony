@@ -1,0 +1,17 @@
+triburch_backend_juegos_Juegos:
+    resource: "@TriburchBackendJuegosBundle/Resources/config/entity_routing/Jocs.yml"
+    prefix: /Jocs
+
+triburch_backend_juegos_Categorias:
+    resource: "@TriburchBackendJuegosBundle/Resources/config/entity_routing/Categorias.yml"
+    prefix: /Categorias
+
+triburch_backend_juegos_Partida:
+    resource: "@TriburchBackendJuegosBundle/Resources/config/entity_routing/Partidas.yml"
+    prefix: /Partidas
+
+triburch_backend_juegos_Jugadors:
+    resource: "@TriburchBackendJuegosBundle/Resources/config/entity_routing/Jugadors.yml"
+    prefix: /Jugadors
+
+
