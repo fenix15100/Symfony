@@ -2,9 +2,11 @@
 
 namespace Triburch\Backend\JuegosBundle\Controller;
 
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Triburch\Backend\JuegosBundle\Entity\Categoria;
-use Triburch\Backend\JuegosBundle\Forms\Type\CategoriasType;
+use Triburch\Backend\JuegosBundle\Forms\Type\Categorias\CategoriasType;
 
 class CategoriasController extends Controller
 {
@@ -106,11 +108,15 @@ class CategoriasController extends Controller
 
     public function listchildAction($id){
 
-        $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine()->getEntityManager();
 
-        $categoria = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($id);
+        //$categoria = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($id);
+        //return $this->render('TriburchBackendJuegosBundle:Jocs:list.html.twig', array('jocs' => $categoria->getJocs));
 
-        return $this->render('TriburchBackendJuegosBundle:Jocs:list.html.twig', array('jocs' => $categoria->getJocs()));
+        $query = $em->createQuery('SELECT u FROM  Triburch\Backend\JuegosBundle\Entity\Joc u WHERE u.categoria ='.$id);
+        $jocs=$query->getResult();
+
+        return $this->render('TriburchBackendJuegosBundle:Jocs:list.html.twig', array('jocs' => $jocs));
 
 
 

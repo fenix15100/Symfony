@@ -16,7 +16,7 @@ class Articles
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", Type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -25,35 +25,35 @@ class Articles
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="title", Type="string", length=255)
      */
     private $title;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="author", type="string", length=255)
+     * @ORM\Column(name="author", Type="string", length=255)
      */
     private $author;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="content", type="text")
+     * @ORM\Column(name="content", Type="text")
      */
     private $content;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tags", type="string", length=255)
+     * @ORM\Column(name="tags", Type="string", length=255)
      */
     private $tags;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="created", type="date")
+     * @ORM\Column(name="created", Type="date")
      * @Assert\NotNull(message="El articulo debe tener una fecha de creacion")
      *
      */
@@ -62,7 +62,7 @@ class Articles
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updated", type="date")
+     * @ORM\Column(name="updated", Type="date")
      *
      *
      */
@@ -71,14 +71,14 @@ class Articles
     /**
      * @var string
      *
-     * @ORM\Column(name="slug", type="string", length=255)
+     * @ORM\Column(name="slug", Type="string", length=255)
      */
     private $slug;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="category", type="string", length=255)
+     * @ORM\Column(name="category", Type="string", length=255)
      */
     private $category;
 

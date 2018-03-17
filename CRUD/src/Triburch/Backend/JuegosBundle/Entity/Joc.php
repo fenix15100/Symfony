@@ -135,7 +135,7 @@ class Joc
     /**
      * @param mixed $categoria
      */
-    public function setCategoria($categoria): void
+    public function setCategoria($categoria)
     {
         $this->categoria = $categoria;
     }

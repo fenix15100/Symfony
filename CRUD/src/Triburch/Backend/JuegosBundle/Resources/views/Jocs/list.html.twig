@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Lista Jocs{% endblock %}
+
+{% block body %}
+    <h1>Listado de Jocs</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Imatge</th>
+            <th>Categoria</th>
+            <th>Hijos(Partidas)</th>
+
+        </tr>
+        {% for joc in jocs %}
+            <tr>
+                <td>{{ joc.id }}</td>
+                <td>{{ joc.nom }}</td>
+                <td>{{ joc.imatge }}</td>
+                <td>{{ joc.categoria }}</td>
+                <td><a href={{ path('partida_list_children',{'id': joc.id})}}>Ver Hijos</a>
+                <td><a href={{ path('joc_edit',{'id': joc.id})}}>Edit</a>
+                    <form action="{{ path('joc_erase',{'id': joc.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="submit" value="Eliminar" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td><a href={{ path('joc_new')}}>Nuevo Joc</a></td>
+        </tr>
+    </table>
+{% endblock %}

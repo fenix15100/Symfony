@@ -15,7 +15,7 @@
         {% for categoria in categorias %}
             <tr>
                 <td>{{ categoria.id }}</td>
-                <td>{{ categorias.nom }}</td>
+                <td>{{ categoria.nom }}</td>
                 <td>{{ categoria.treballa }}</td>
                 <td><a href={{ path('categoria_list_children',{'id': categoria.id})}}>Ver Hijos</a>
                 <td><a href={{ path('categoria_edit',{'id': categoria.id})}}>Edit</a>

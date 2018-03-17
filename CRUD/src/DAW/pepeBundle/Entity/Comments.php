@@ -16,7 +16,7 @@ class Comments
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", Type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -25,21 +25,21 @@ class Comments
     /**
      * @var string
      *
-     * @ORM\Column(name="author", type="string", length=255)
+     * @ORM\Column(name="author", Type="string", length=255)
      */
     private $author;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="content", type="text")
+     * @ORM\Column(name="content", Type="text")
      */
     private $content;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="reply_to", type="integer")
+     * @ORM\Column(name="reply_to", Type="integer")
      */
     private $replyTo;
 

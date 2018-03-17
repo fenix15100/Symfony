@@ -1,5 +1,5 @@
 <?php
-namespace Triburch\Backend\JuegosBundle\Forms\Type;
+namespace Triburch\Backend\JuegosBundle\Forms\Type\Categorias;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 

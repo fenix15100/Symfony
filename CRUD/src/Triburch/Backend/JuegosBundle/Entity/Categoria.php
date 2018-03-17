@@ -27,14 +27,14 @@ class Categoria
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=40)
+     * @ORM\Column(name="nom",type="string", length=40)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="treballa", type="text",length=60000)
+     * @ORM\Column(name="treballa",type="text",length=60000)
      *
      * @Assert\NotBlank(message="El Campo es obligatorio")
      */
@@ -133,6 +133,11 @@ class Categoria
 
     public function addJocs(Joc $joc){
         $this->jocs[]=$joc;
+    }
+
+
+    public function __toString(){
+        return $this->getNom();
     }
 
 }
