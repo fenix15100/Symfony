@@ -1,0 +1,20 @@
+partida_new:
+    path:     /new
+    defaults: { _controller: TriburchBackendJuegosBundle:Partidas:new }
+
+partida_list:
+    path:     /
+    defaults: { _controller: TriburchBackendJuegosBundle:Partidas:list }
+
+partida_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Partidas:edit }
+
+partida_erase:
+    path:     /erase/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Partidas:erase }
+    methods:    [DELETE]
+
+partida_list_children:
+    path:     /listchild/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Partidas:listchild }

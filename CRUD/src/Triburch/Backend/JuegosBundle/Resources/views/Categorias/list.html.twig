@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Lista Categorias{% endblock %}
+
+{% block body %}
+    <h1>Listado de Categorias</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Treballa</th>
+            <th>Hijos(Jocs)</th>
+
+        </tr>
+        {% for categoria in categorias %}
+            <tr>
+                <td>{{ categoria.id }}</td>
+                <td>{{ categorias.nom }}</td>
+                <td>{{ categoria.treballa }}</td>
+                <td><a href={{ path('categoria_list_children',{'id': categoria.id})}}>Ver Hijos</a>
+                <td><a href={{ path('categoria_edit',{'id': categoria.id})}}>Edit</a>
+                    <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="submit" value="Eliminar" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td><a href={{ path('categoria_new')}}>Nueva Categoria</a></td>
+        </tr>
+    </table>
+{% endblock %}

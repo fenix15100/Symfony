@@ -3,6 +3,8 @@
 namespace Triburch\Backend\JuegosBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -10,6 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Triburch\Backend\JuegosBundle\Entity\JugadorRepository")
+ * @ORM\Table(uniqueConstraints={@ORM\UniqueConstraint(name="nick_unique",columns={"nick"})})
  */
 class Jugador
 {
@@ -42,7 +45,7 @@ class Jugador
      * @var string
      *
      * @ORM\Column(name="cognom2", type="string", length=40,nullable=true)
-     * @Assert\NotBlank(message="El Campo )
+     * @Assert\NotBlank(message="El Campo es obligatorio" )
      */
     private $cognom2;
 
@@ -57,7 +60,7 @@ class Jugador
     /**
      * @var string
      *
-     * @ORM\Column(name="diagnostic", type="text",nullable=true)
+     * @ORM\Column(name="diagnostic", type="text",length=60000,nullable=true)
      */
     private $diagnostic;
 
@@ -87,9 +90,17 @@ class Jugador
 
 
     /**
-     * Jugador constructor.
-     * @param \DateTime $dataNaixement
+     *
+     * @ManyToOne(targetEntity="Partida", inversedBy="jugadors")
+     * @JoinColumn(name="partida_id", referencedColumnName="id")
      */
+    private $partida;
+
+
+
+    /**
+     * Jugador constructor.
+     * @param \DateTime $dataNaixement */
 
     public function __construct()
     {
@@ -290,6 +301,22 @@ class Jugador
     public function getActiu()
     {
         return $this->actiu;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPartida()
+    {
+        return $this->partida;
+    }
+
+    /**
+     * @param mixed $partida
+     */
+    public function setPartida($partida): void
+    {
+        $this->partida = $partida;
     }
 
 

@@ -1,0 +1,20 @@
+categoria_new:
+    path:     /new
+    defaults: { _controller: TriburchBackendJuegosBundle:Categorias:new }
+
+categoria_list:
+    path:     /
+    defaults: { _controller: TriburchBackendJuegosBundle:Categorias:list }
+
+categoria_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Categorias:edit }
+
+categoria_erase:
+    path:     /erase/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Categorias:erase }
+    methods:    [DELETE]
+
+categoria_list_children:
+    path:     /listchild/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Categorias:listchild }

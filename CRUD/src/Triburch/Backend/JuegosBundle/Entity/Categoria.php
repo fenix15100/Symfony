@@ -3,12 +3,15 @@
 namespace Triburch\Backend\JuegosBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\OneToMany;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Categoria
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Triburch\Backend\JuegosBundle\Entity\CategoriaRepository")
+ * @ORM\Table(uniqueConstraints={@ORM\UniqueConstraint(name="nom_unique",columns={"nom"})})
  */
 class Categoria
 {
@@ -31,9 +34,29 @@ class Categoria
     /**
      * @var string
      *
-     * @ORM\Column(name="treballa", type="text")
+     * @ORM\Column(name="treballa", type="text",length=60000)
+     *
+     * @Assert\NotBlank(message="El Campo es obligatorio")
      */
     private $treballa;
+
+
+
+
+    /**
+     * @OneToMany(targetEntity="Joc", mappedBy="Categoria")
+     *
+     */
+    private $jocs;
+
+    /**
+     * Categoria constructor.
+     *
+     */
+    public function __construct()
+    {
+        $this->jocs=new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
 
     /**
@@ -91,4 +114,25 @@ class Categoria
     {
         return $this->treballa;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getJocs()
+    {
+        return $this->jocs;
+    }
+
+    /**
+     * @param mixed $jocs
+     */
+    public function setJocs(\Doctrine\Common\Collections\ArrayCollection $jocs)
+    {
+        $this->jocs = $jocs;
+    }
+
+    public function addJocs(Joc $joc){
+        $this->jocs[]=$joc;
+    }
+
 }

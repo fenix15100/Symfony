@@ -2,13 +2,19 @@
 
 namespace Triburch\Backend\JuegosBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
+use Doctrine\ORM\Mapping\OneToMany;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Joc
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Triburch\Backend\JuegosBundle\Entity\JocRepository")
+ * @ORM\Table(uniqueConstraints={@ORM\UniqueConstraint(name="nomjoc_unique",columns={"nom"})})
  */
 class Joc
 {
@@ -25,15 +31,41 @@ class Joc
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=40)
+     * @Assert\NotBlank(message="El Campo es obligatorio")
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="imatge", type="string", length=100)
+     * @ORM\Column(name="imatge", type="string", length=100,nullable=true)
+     *
      */
     private $imatge;
+
+
+
+    /**
+     *
+     * @ManyToOne(targetEntity="Categoria", inversedBy="jocs")
+     * @JoinColumn(name="categoria_id", referencedColumnName="id")
+     */
+    private $categoria;
+
+
+    /**
+     *
+     * @OneToMany(targetEntity="Partida", mappedBy="Joc")
+     */
+    private $partidas;
+
+    /**
+     * Joc constructor.
+     */
+    public function __construct()
+    {
+        $this->partidas=new ArrayCollection();
+    }
 
 
     /**
@@ -91,4 +123,44 @@ class Joc
     {
         return $this->imatge;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
+
+    /**
+     * @param mixed $categoria
+     */
+    public function setCategoria($categoria): void
+    {
+        $this->categoria = $categoria;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPartidas()
+    {
+        return $this->partidas;
+    }
+
+    /**
+     * @param mixed $partidas
+     */
+    public function setPartidas( ArrayCollection $partidas): void
+    {
+        $this->partidas = $partidas;
+    }
+
+
+    public function addPartidas(Partida $partida){
+        $this->partidas[]=$partida;
+    }
+
+
+
 }

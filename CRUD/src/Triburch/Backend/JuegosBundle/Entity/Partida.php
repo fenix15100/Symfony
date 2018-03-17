@@ -3,7 +3,10 @@
 namespace Triburch\Backend\JuegosBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
+use Doctrine\ORM\Mapping\OneToMany;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Partida
  *
@@ -31,42 +34,43 @@ class Partida
     /**
      * @var integer
      *
-     * @ORM\Column(name="temps", type="integer")
+     * @ORM\Column(name="temps", type="integer",options={"unsigned"=true})
      */
-    private $temps;
+    private $temps=0;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="clicks", type="integer")
+     * @ORM\Column(name="clicks", type="integer",nullable=true,options={"unsigned"=true})
+     * @Assert\NotNull(message="El Campo es obligatorio")
      */
     private $clicks;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="encerts", type="integer")
+     * @ORM\Column(name="encerts", type="integer",nullable=true,options={"unsigned"=true})
      */
     private $encerts;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="errades", type="integer")
+     * @ORM\Column(name="errades", type="integer",nullable=true,options={"unsigned"=true})
      */
     private $errades;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="dificultad", type="integer")
+     * @ORM\Column(name="dificultad", type="integer",nullable=true,options={"unsigned"=true})
      */
     private $dificultad;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="velocitat", type="decimal")
+     * @ORM\Column(name="velocitat", type="decimal",nullable=true,precision=6,scale=2)
      */
     private $velocitat;
 
@@ -74,9 +78,32 @@ class Partida
      * @var boolean
      *
      * @ORM\Column(name="so", type="boolean")
+     * @Assert\NotNull(message="El Campo es obligatorio")
      */
-    private $so;
+    private $so=false;
 
+    /**
+     * @OneToMany(targetEntity="Jugador", mappedBy="Partida")
+     *
+     */
+    private $jugadors;
+
+
+    /**
+     *
+     * @ManyToOne(targetEntity="Joc", inversedBy="partidas")
+     * @JoinColumn(name="joc_id", referencedColumnName="id")
+     */
+    private $joc;
+
+    /**
+     * Partida constructor.
+     */
+
+    public function __construct()
+    {
+        $this->jugadors=new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -271,4 +298,48 @@ class Partida
     {
         return $this->so;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getJugadors()
+    {
+        return $this->jugadors;
+    }
+
+    /**
+     * @param mixed $jugadors
+     */
+
+    //Añadir un jugador al array
+    public function addJugadors( Jugador $jugadors)
+    {
+        $this->jugadors[] = $jugadors;
+    }
+
+    //Setear el array entera
+    public function SetJugadors(\Doctrine\Common\Collections\ArrayCollection $jugadors)
+    {
+        $this->jugadors = $jugadors;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getJoc()
+    {
+        return $this->joc;
+    }
+
+    /**
+     * @param mixed $joc
+     */
+    public function setJoc($joc): void
+    {
+        $this->joc = $joc;
+    }
+
+
+
 }

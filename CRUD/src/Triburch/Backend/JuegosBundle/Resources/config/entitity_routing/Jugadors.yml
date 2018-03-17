@@ -1,0 +1,20 @@
+jugador_new:
+    path:     /new
+    defaults: { _controller: TriburchBackendJuegosBundle:Jugadors:new }
+
+jugador_list:
+    path:     /
+    defaults: { _controller: TriburchBackendJuegosBundle:Jugadors:list }
+
+jugador_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jugadors:edit }
+
+jugador_erase:
+    path:     /erase/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jugadors:erase }
+    methods:    [DELETE]
+
+jugador_list_children:
+    path:     /listchild/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jugadors:listchild }

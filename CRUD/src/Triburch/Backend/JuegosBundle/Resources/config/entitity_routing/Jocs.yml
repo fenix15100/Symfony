@@ -1,0 +1,20 @@
+joc_new:
+    path:     /new
+    defaults: { _controller: TriburchBackendJuegosBundle:Jocs:new }
+
+joc_list:
+    path:     /
+    defaults: { _controller: TriburchBackendJuegosBundle:Jocs:list }
+
+joc_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jocs:edit }
+
+joc_erase:
+    path:     /erase/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jocs:erase }
+    methods:    [DELETE]
+
+joc_list_children:
+    path:     /listchild/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Jocs:listchild }
