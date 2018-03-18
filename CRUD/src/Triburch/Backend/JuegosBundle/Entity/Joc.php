@@ -48,7 +48,8 @@ class Joc
     /**
      *
      * @ManyToOne(targetEntity="Categoria", inversedBy="jocs")
-     * @JoinColumn(name="categoria_id", referencedColumnName="id")
+     * @JoinColumn(name="categoria_id", referencedColumnName="id",onDelete="CASCADE")
+     * @Assert\NotNull(message="El Campo es obligatorio")
      */
     private $categoria;
 
@@ -65,6 +66,7 @@ class Joc
     public function __construct()
     {
         $this->partidas=new ArrayCollection();
+
     }
 
 
@@ -135,7 +137,7 @@ class Joc
     /**
      * @param mixed $categoria
      */
-    public function setCategoria($categoria)
+    public function setCategoria( Categoria $categoria)
     {
         $this->categoria = $categoria;
     }
@@ -148,13 +150,7 @@ class Joc
         return $this->partidas;
     }
 
-    /**
-     * @param mixed $partidas
-     */
-    public function setPartidas( ArrayCollection $partidas): void
-    {
-        $this->partidas = $partidas;
-    }
+
 
 
     public function addPartidas(Partida $partida){

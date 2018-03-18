@@ -3,6 +3,7 @@
 namespace Triburch\Backend\JuegosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Triburch\Backend\JuegosBundle\Entity\Categoria;
 use Triburch\Backend\JuegosBundle\Entity\Joc;
 use Triburch\Backend\JuegosBundle\Forms\Type\Jocs\JocsType;
@@ -17,30 +18,24 @@ class JocsController extends Controller
         $form = $this->createForm(new JocsType(),$joc,array(
             'action' => $this->generateUrl('joc_new'),
             'method' => 'POST'));
-       if($request->getMethod() == 'POST')
-        {
-            $em = $this->getDoctrine()->getManager();
-            $joc->setNom($_POST['joc_form']['nom']);
-            $joc->setImatge($_POST['joc_form']['imatge']);
-            $categoria=$em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($_POST['joc_form']['categoria']);
-            $joc->setCategoria($categoria);
-            $em->persist($joc);
-            $em->flush();
+       if($request->getMethod() == 'POST') {
+           $em = $this->getDoctrine()->getManager();
+           $joc->setNom($_POST['joc_form']['nom']);
+           $joc->setImatge($_POST['joc_form']['imatge']);
+           $categoria = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($_POST['joc_form']['categoria']);
+           $joc->setCategoria($categoria);
+           $errores = $this->get('validator')->validate($joc);
 
-            return $this->redirect($this->generateURL('joc_list'));
+           if (count($errores)>0) {
+               return $this->render('TriburchBackendJuegosBundle:Jocs:show.html.twig', array('form' => $form->createView(), 'errores' => $errores));
+           }else{
+               $em->persist($joc);
+               $em->flush();
+           }
 
+           return $this->redirect($this->generateURL('joc_list'));
 
-            //$form->handleRequest($request);
-            /*if($form->isValid())
-            {
-
-                $em = $this->getDoctrine()->getManager();
-                $em->persist($joc);
-                $em->flush();
-
-                return $this->redirect($this->generateURL('joc_list'));
-            }*/
-        }
+       }
         return $this->render('TriburchBackendJuegosBundle:Jocs:show.html.twig', array('form' => $form->createView()));
 
 

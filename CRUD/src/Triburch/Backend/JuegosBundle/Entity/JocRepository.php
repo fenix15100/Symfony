@@ -12,4 +12,8 @@ use Doctrine\ORM\EntityRepository;
  */
 class JocRepository extends EntityRepository
 {
+    public function findByCategoria($id){
+
+
+    }
 }

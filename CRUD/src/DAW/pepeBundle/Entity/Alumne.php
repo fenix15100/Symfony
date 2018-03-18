@@ -16,7 +16,7 @@ class Alumne
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", Type="integer")
+     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -25,7 +25,7 @@ class Alumne
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", Type="string", length=40)
+     * @ORM\Column(name="nom", type="string", length=40)
      * @Assert\NotBlank(message="El nombre del alumno debe tener nombre")
      */
     private $nom;
@@ -33,7 +33,7 @@ class Alumne
     /**
      * @var string
      *
-     * @ORM\Column(name="observacions", Type="text",nullable=true)
+     * @ORM\Column(name="observacions", type="text",nullable=true)
      * @Assert\NotBlank(message="El campo observacion del alumno debe tener conetnido")
      *
      */
@@ -42,14 +42,14 @@ class Alumne
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dataNaixement", Type="date",nullable=true)
+     * @ORM\Column(name="dataNaixement", type="date",nullable=true)
      */
     private $dataNaixement;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="edat", Type="integer",options={"unsigned"=true})
+     * @ORM\Column(name="edat", type="integer",options={"unsigned"=true})
      * @Assert\NotNull(message="Edat no puede ser nulo")
      * @Assert\Range(min = 0,
      *      max = 100,
@@ -61,7 +61,7 @@ class Alumne
     /**
      * @var boolean
      *
-     * @ORM\Column(name="majorEdat", Type="boolean")
+     * @ORM\Column(name="majorEdat", type="boolean")
      * @Assert\NotNull(message="majorEdat no puede ser nulo")
      *
      */
@@ -70,14 +70,14 @@ class Alumne
     /**
      * @var string
      *
-     * @ORM\Column(name="notaMitja", Type="decimal",nullable=true,precision=6,scale=2)
+     * @ORM\Column(name="notaMitja", type="decimal",nullable=true,precision=6,scale=2)
      */
     private $notaMitja;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dataMatriculacion", Type="datetime")
+     * @ORM\Column(name="dataMatriculacion", type="datetime")
      * @Assert\NotNull(message=" no puede ser nulo")
      */
     private $dataMatriculacion;
