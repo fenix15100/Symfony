@@ -78,7 +78,7 @@ class Partida
      * @var boolean
      *
      * @ORM\Column(name="so", type="boolean")
-     * @Assert\NotNull(message="El Campo es obligatorio")
+     *
      */
     private $so=false;
 
@@ -92,7 +92,7 @@ class Partida
     /**
      *
      * @ManyToOne(targetEntity="Joc", inversedBy="partidas")
-     * @JoinColumn(name="joc_id", referencedColumnName="id")
+     * @JoinColumn(name="joc_id", referencedColumnName="id",onDelete="CASCADE")
      */
     private $joc;
 
@@ -103,6 +103,7 @@ class Partida
     public function __construct()
     {
         $this->jugadors=new \Doctrine\Common\Collections\ArrayCollection();
+        $this->quan=new \DateTime();
     }
 
     /**
@@ -121,7 +122,7 @@ class Partida
      * @param \DateTime $quan
      * @return Partida
      */
-    public function setQuan($quan)
+    public function setQuan(\DateTime $quan)
     {
         $this->quan = $quan;
     
@@ -335,11 +336,14 @@ class Partida
     /**
      * @param mixed $joc
      */
-    public function setJoc($joc): void
+    public function setJoc($joc)
     {
         $this->joc = $joc;
     }
 
+    public function __toString(){
+        return strval($this->getId());
+    }
 
 
 }

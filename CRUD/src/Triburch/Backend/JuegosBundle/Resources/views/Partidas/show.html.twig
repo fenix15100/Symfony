@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Show Item Partida{% endblock %}
+
+{% block body %}
+
+    {% if errores is defined %}
+        {% for error in errores %}
+            {% set errorstring=error|split('.') %}
+            Error:{{errorstring[1]}}
+        {% endfor %}
+    {% endif %}
+
+    {{ form_start(form)}}
+    {{ form_widget(form) }}
+
+{% endblock %}

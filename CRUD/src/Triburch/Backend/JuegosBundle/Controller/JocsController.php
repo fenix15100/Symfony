@@ -3,8 +3,6 @@
 namespace Triburch\Backend\JuegosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
-use Triburch\Backend\JuegosBundle\Entity\Categoria;
 use Triburch\Backend\JuegosBundle\Entity\Joc;
 use Triburch\Backend\JuegosBundle\Forms\Type\Jocs\JocsType;
 
@@ -72,24 +70,17 @@ class JocsController extends Controller
             $joc->setImatge($_POST['joc_form']['imatge']);
             $categoria=$em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($_POST['joc_form']['categoria']);
             $joc->setCategoria($categoria);
-            $em->persist($joc);
-            $em->flush();
+            $errores = $this->get('validator')->validate($joc);
+
+            if (count($errores)>0) {
+                return $this->render('TriburchBackendJuegosBundle:Jocs:show.html.twig', array('form' => $form->createView(), 'errores' => $errores));
+            }else{
+                $em->persist($joc);
+                $em->flush();
+            }
 
             return $this->redirect($this->generateURL('joc_list'));
 
-            /*
-            $form->handleRequest($request);
-
-
-            if($form->isValid())
-            {
-
-                $em = $this->getDoctrine()->getManager();
-                $em->persist($joc);
-                $em->flush();
-
-                return $this->redirect($this->generateURL('joc_list'));
-            }*/
         }
 
 
@@ -118,16 +109,10 @@ class JocsController extends Controller
 
     public function listchildAction($id){
 
-        $em = $this->getDoctrine()->getEntityManager();
-
-        //$categoria = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($id);
-        //return $this->render('TriburchBackendJuegosBundle:Jocs:list.html.twig', array('jocs' => $categoria->getJocs));
-
-        $query = $em->createQuery('SELECT u FROM  Triburch\Backend\JuegosBundle\Entity\Partida u WHERE u.joc ='.$id);
-        $partidas=$query->getResult();
+        $em = $this->getDoctrine()->getManager();
+        $partidas=$em->getRepository('TriburchBackendJuegosBundle:Partida')->findBy(array('joc'=>$id));
 
         return $this->render('TriburchBackendJuegosBundle:Partidas:list.html.twig', array('partidas' => $partidas));
-
 
 
     }

@@ -1,0 +1,46 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Lista Jugadores{% endblock %}
+
+{% block body %}
+    <h1>Listado de Jugadores</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Cognom 1</th>
+            <th>Cognom 2</th>
+            <th>Data Naixement</th>
+            <th>Diagnostic</th>
+            <th>Nick</th>
+            <th>Idioma</th>
+            <th>Actiu</th>
+            <th>Partida</th>
+
+        </tr>
+        {% for jugador in jugadors %}
+            <tr>
+                <td>{{ jugador.id }}</td>
+                <td>{{ jugador.nom }}</td>
+                <td>{{ jugador.cognom1 }}</td>
+                <td>{{ jugador.cognom2 }}</td>
+                <td>{{ jugador.dataNaixement |date}}</td>
+                <td>{{ jugador.diagnostic }}</td>
+                <td>{{ jugador.nick }}</td>
+                <td>{{ jugador.idioma }}</td>
+                <td>{{ jugador.actiu }}</td>
+                <td>{{ jugador.partida }}</td>
+                <td><a href={{ path('jugador_edit',{'id': jugador.id})}}>Edit</a>
+                    <form action="{{ path('jugador_erase',{'id': jugador.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="submit" value="Eliminar" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+
+            <td><a href={{ path('jugador_new')}}>Nuevo Jugador</a><br/><a href={{ path('partida_list')}}>Volver ha Partidas</a></td>
+        </tr>
+    </table>
+{% endblock %}

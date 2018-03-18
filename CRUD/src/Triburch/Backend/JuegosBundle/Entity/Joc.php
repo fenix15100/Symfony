@@ -156,6 +156,9 @@ class Joc
     public function addPartidas(Partida $partida){
         $this->partidas[]=$partida;
     }
+    public function __toString(){
+        return $this->getNom();
+    }
 
 
 

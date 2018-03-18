@@ -19,7 +19,7 @@
                 <td>{{ joc.nom }}</td>
                 <td>{{ joc.imatge }}</td>
                 <td>{{ joc.categoria }}</td>
-                <td><a href={{ path('partida_list_children',{'id': joc.id})}}>Ver Hijos</a>
+                <td><a href={{ path('joc_list_children',{'id': joc.id})}}>Ver Hijos</a>
                 <td><a href={{ path('joc_edit',{'id': joc.id})}}>Edit</a>
                     <form action="{{ path('joc_erase',{'id': joc.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />

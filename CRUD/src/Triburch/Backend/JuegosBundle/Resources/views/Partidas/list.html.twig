@@ -1,0 +1,48 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Lista Partidas{% endblock %}
+
+{% block body %}
+    <h1>Listado de Partidas</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Quan</th>
+            <th>Temps</th>
+            <th>Clicks</th>
+            <th>Encerts</th>
+            <th>Errades</th>
+            <th>Dificultad</th>
+            <th>Velocitatat</th>
+            <th>So</th>
+            <th>Joc</th>
+            <th>Hijos(Jugadors)</th>
+
+        </tr>
+        {% for partida in partidas %}
+            <tr>
+                <td>{{ partida.id }}</td>
+                <td>{{ partida.quan|date }}</td>
+                <td>{{ partida.temps }}</td>
+                <td>{{ partida.clicks }}</td>
+                <td>{{ partida.encerts }}</td>
+                <td>{{ partida.errades }}</td>
+                <td>{{ partida.dificultad }}</td>
+                <td>{{ partida.velocitat }}</td>
+                <td>{{ partida.so }}</td>
+                <td>{{ partida.joc }}</td>
+                <td><a href={{ path('partida_list_children',{'id': partida.id})}}>Ver Hijos</a>
+                <td><a href={{ path('partida_edit',{'id': partida.id})}}>Edit</a>
+                    <form action="{{ path('partida_erase',{'id': partida.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="submit" value="Eliminar" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+
+            <td><a href={{ path('partida_new')}}>Nueva Partida</a><br/><a href={{ path('joc_list')}}>Volver ha Jocs</a></td>
+        </tr>
+    </table>
+{% endblock %}

@@ -74,7 +74,7 @@ class Jugador
     /**
      * @var string
      *
-     * @ORM\Column(name="idioma", type="string", length=2,nullable=true)
+     * @ORM\Column(name="idioma", type="string", length=4,nullable=true)
      * @Assert\Language()
      */
     private $idioma;
@@ -83,7 +83,7 @@ class Jugador
      * @var boolean
      *
      * @ORM\Column(name="actiu", type="boolean")
-     * @Assert\NotNull(message="El Campo es obligatorio")
+     *
      */
     private $actiu=true;
 
@@ -92,7 +92,7 @@ class Jugador
     /**
      *
      * @ManyToOne(targetEntity="Partida", inversedBy="jugadors")
-     * @JoinColumn(name="partida_id", referencedColumnName="id")
+     * @JoinColumn(name="partida_id", referencedColumnName="id",onDelete="CASCADE")
      */
     private $partida;
 
