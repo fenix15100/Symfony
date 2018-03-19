@@ -83,7 +83,7 @@ class Partida
     private $so=false;
 
     /**
-     * @OneToMany(targetEntity="Jugador", mappedBy="Partida")
+     * @OneToMany(targetEntity="Jugador", mappedBy="partida")
      *
      */
     private $jugadors;

@@ -44,7 +44,7 @@ class Categoria
 
 
     /**
-     * @OneToMany(targetEntity="Joc", mappedBy="Categoria")
+     * @OneToMany(targetEntity="Joc", mappedBy="categoria")
      *
      */
     private $jocs;

@@ -56,7 +56,7 @@ class Joc
 
     /**
      *
-     * @OneToMany(targetEntity="Partida", mappedBy="Joc")
+     * @OneToMany(targetEntity="Partida", mappedBy="joc")
      */
     private $partidas;
 

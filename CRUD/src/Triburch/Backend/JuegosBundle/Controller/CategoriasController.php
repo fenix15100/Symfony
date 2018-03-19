@@ -113,6 +113,8 @@ class CategoriasController extends Controller
         $em = $this->getDoctrine()->getManager();
         $jocs=$em->getRepository('TriburchBackendJuegosBundle:Joc')->findBy(array('categoria'=>$id));
 
+
+
         return $this->render('TriburchBackendJuegosBundle:Jocs:list.html.twig', array('jocs' => $jocs));
 
 

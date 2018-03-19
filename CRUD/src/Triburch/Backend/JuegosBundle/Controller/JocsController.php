@@ -18,6 +18,8 @@ class JocsController extends Controller
             'method' => 'POST'));
        if($request->getMethod() == 'POST') {
            $em = $this->getDoctrine()->getManager();
+
+
            $joc->setNom($_POST['joc_form']['nom']);
            $joc->setImatge($_POST['joc_form']['imatge']);
            $categoria = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->find($_POST['joc_form']['categoria']);

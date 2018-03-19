@@ -18,7 +18,7 @@ class JugadorsType extends AbstractType
             ->add('nick')
             ->add('idioma')
             ->add('actiu','checkbox',array('required'=>false))
-            ->add('partida')
+            ->add('partida','entity',array('class'=> 'Triburch\Backend\JuegosBundle\Entity\Partida'))
             ->add('submit','submit',array('label'=>'Enviar'));
 
     }
