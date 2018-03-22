@@ -1,10 +1,11 @@
-{% extends "::base.html.twig" %}
+{% extends "@TriburchBackendJuegos/layout.html.twig" %}
 
 {% block title %}Lista Jugadores{% endblock %}
 
 {% block body %}
     <h1>Listado de Jugadores</h1>
-    <table border="1">
+    <table border="1"  class="greenTable">
+        <thead>
         <tr>
             <th>ID</th>
             <th>Nom</th>
@@ -18,6 +19,8 @@
             <th>Partida</th>
 
         </tr>
+        </thead>
+        <tbody>
         {% for jugador in jugadors %}
             <tr>
                 <td>{{ jugador.id }}</td>
@@ -30,17 +33,22 @@
                 <td>{{ jugador.idioma }}</td>
                 <td>{{ jugador.actiu }}</td>
                 <td>{{ jugador.partida }}</td>
-                <td><a href={{ path('jugador_edit',{'id': jugador.id})}}>Edit</a>
+                <td><a href="{{ path('jugador_edit',{'id': jugador.id})}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
                     <form action="{{ path('jugador_erase',{'id': jugador.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />
-                        <input type="submit" value="Eliminar" />
+                        <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
                     </form>
                 </td>
             </tr>
         {% endfor %}
+        </tbody>
+        <tfoot>
+
+
         <tr>
 
             <td><a href={{ path('jugador_new')}}>Nuevo Jugador</a><br/><a href={{ path('partida_list')}}>Volver ha Partidas</a></td>
         </tr>
+        </tfoot>
     </table>
 {% endblock %}

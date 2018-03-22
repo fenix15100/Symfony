@@ -1,0 +1,20 @@
+{# src/MDW/DemoBundle/Resources/views/layout.html.twig #}
+{% extends '::base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/TriburchBakendJuegosBundle/css/main.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+    <div id="layout">
+
+
+        <div id="content" class="clean" >
+            <div id="content_left">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

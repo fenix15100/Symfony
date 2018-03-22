@@ -1,12 +1,13 @@
-{% extends "::base.html.twig" %}
+{% extends "@TriburchBackendJuegos/layout.html.twig" %}
 
 {% block title %}Lista Categorias{% endblock %}
 
-{% block body %}
+{% block content %}
 
 
     <h1>Listado de Categorias</h1>
-    <table border="1">
+    <table border="1" class="greenTable">
+        <thead>
         <tr>
             <th>ID</th>
             <th>Nom</th>
@@ -14,22 +15,30 @@
             <th>Hijos(Jocs)</th>
 
         </tr>
+        </thead>
+        <tbody>
         {% for categoria in categorias %}
             <tr>
                 <td>{{ categoria.id }}</td>
                 <td>{{ categoria.nom }}</td>
                 <td>{{ categoria.treballa }}</td>
-                <td><a href={{ path('categoria_list_children',{'id': categoria.id})}}>Ver Hijos</a>
-                <td><a href={{ path('categoria_edit',{'id': categoria.id})}}>Edit</a>
+                <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}" class="links">Ver Hijos</a>
+                <td><a href={{ path('categoria_edit',{'id': categoria.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}"width="30" height="30"></a>
                     <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />
-                        <input type="submit" value="Eliminar" />
+                        <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
                     </form>
                 </td>
             </tr>
         {% endfor %}
+        </tbody>
+        <tfoot>
+
         <tr>
-            <td><a href={{ path('categoria_new')}}>Nueva Categoria</a></td>
+            <td><a href="{{ path('categoria_new')}}" class="links">Nueva Categoria</a></td>
         </tr>
+
+        </tfoot>
+
     </table>
 {% endblock %}
