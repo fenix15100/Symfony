@@ -4,25 +4,26 @@
 
 {% block body %}
     <h1>Listado de Jocs</h1>
-    <table border="1" class="greenTable">
-        <thead>
+    <table border="1" style="overflow: auto">
+        <thead class="tbl-header">
         <tr>
             <th>ID</th>
             <th>Nom</th>
             <th>Imatge</th>
             <th>Categoria</th>
             <th>Hijos(Partidas)</th>
+            <th>Acciones</th>
 
         </tr>
         </thead>
-        <tbody>
+        <tbody class="tbl-content">
         {% for joc in jocs %}
             <tr>
                 <td>{{ joc.id }}</td>
                 <td>{{ joc.nom }}</td>
                 <td>{{ joc.imatge }}</td>
                 <td>{{ joc.categoria }}</td>
-                <td><a href="{{ path('joc_list_children',{'id': joc.id})}}" class="links">Ver Hijos</a>
+                <td><a href="{{ path('joc_list_children',{'id': joc.id})}}">Ver Hijos</a>
                 <td><a href={{ path('joc_edit',{'id': joc.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
                     <form action="{{ path('joc_erase',{'id': joc.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />
@@ -35,7 +36,8 @@
         <tfoot>
         <tr>
 
-            <td><a href="{{ path('joc_new')}}" class="links">Nuevo Joc</a><br/><a href={{ path('categoria_list')}}>Volver ha categorias</a></td>
+            <td colspan="5"><a href={{ path('categoria_list')}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/return.png') }}" width="50" height="50"></a></td>
+            <td><a href="{{ path('joc_new')}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></td>
         </tr>
         </tfoot>
     </table>

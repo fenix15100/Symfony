@@ -1,10 +1,11 @@
-{% extends "::base.html.twig" %}
+{% extends "@TriburchBackendJuegos/layout.html.twig" %}
 
 {% block title %}Lista Partidas{% endblock %}
 
 {% block body %}
     <h1>Listado de Partidas</h1>
-    <table border="1">
+    <table border="1" style="overflow: auto">
+        <thead>
         <tr>
             <th>ID</th>
             <th>Quan</th>
@@ -17,8 +18,11 @@
             <th>So</th>
             <th>Joc</th>
             <th>Hijos(Jugadors)</th>
+            <th>Acciones</th>
 
         </tr>
+        </thead>
+        <tbody>
         {% for partida in partidas %}
             <tr>
                 <td>{{ partida.id }}</td>
@@ -32,17 +36,21 @@
                 <td>{{ partida.so }}</td>
                 <td>{{ partida.joc }}</td>
                 <td><a href={{ path('partida_list_children',{'id': partida.id})}}>Ver Hijos</a>
-                <td><a href={{ path('partida_edit',{'id': partida.id})}}>Edit</a>
+                <td><a href={{ path('partida_edit',{'id': partida.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
                     <form action="{{ path('partida_erase',{'id': partida.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />
-                        <input type="submit" value="Eliminar" />
+                        <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
                     </form>
                 </td>
             </tr>
         {% endfor %}
+        </tbody>
+        <tfoot>
         <tr>
+            <td colspan="11"><a href={{ path('joc_list')}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/return.png') }}" width="50" height="50"></a></td>
+            <td><a href={{ path('partida_new')}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a>
 
-            <td><a href={{ path('partida_new')}}>Nueva Partida</a><br/><a href={{ path('joc_list')}}>Volver ha Jocs</a></td>
         </tr>
+        </tfoot>
     </table>
 {% endblock %}

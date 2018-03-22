@@ -6,39 +6,42 @@
 
 
     <h1>Listado de Categorias</h1>
-    <table border="1" class="greenTable">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Treballa</th>
-            <th>Hijos(Jocs)</th>
 
-        </tr>
-        </thead>
-        <tbody>
-        {% for categoria in categorias %}
+        <table border="1" style="overflow: auto">
+            <thead class="tbl-header">
             <tr>
-                <td>{{ categoria.id }}</td>
-                <td>{{ categoria.nom }}</td>
-                <td>{{ categoria.treballa }}</td>
-                <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}" class="links">Ver Hijos</a>
-                <td><a href={{ path('categoria_edit',{'id': categoria.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}"width="30" height="30"></a>
-                    <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
-                        <input type="hidden" name="_method" value="DELETE" />
-                        <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
-                    </form>
-                </td>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Treballa</th>
+                <th>Hijos(Jocs)</th>
+                <th>Acciones</th>
+
             </tr>
-        {% endfor %}
-        </tbody>
-        <tfoot>
+            </thead>
+            <tbody class="tbl-content">
+            {% for categoria in categorias %}
+                <tr>
+                    <td>{{ categoria.id }}</td>
+                    <td>{{ categoria.nom }}</td>
+                    <td>{{ categoria.treballa }}</td>
+                    <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}">Ver Hijos</a>
+                    <td><a href={{ path('categoria_edit',{'id': categoria.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}"width="30" height="30"></a>
+                        <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
+                            <input type="hidden" name="_method" value="DELETE" />
+                            <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            <tfoot>
 
-        <tr>
-            <td><a href="{{ path('categoria_new')}}" class="links">Nueva Categoria</a></td>
-        </tr>
+            <tr>
+                <td colspan="5"><a href="{{ path('categoria_new')}}"><a href="{{ path('joc_new')}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></a></td>
+            </tr>
 
-        </tfoot>
+            </tfoot>
 
-    </table>
+        </table>
+
 {% endblock %}

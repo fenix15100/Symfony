@@ -4,7 +4,7 @@
 
 {% block body %}
     <h1>Listado de Jugadores</h1>
-    <table border="1"  class="greenTable">
+    <table border="1"  style="overflow: auto">
         <thead>
         <tr>
             <th>ID</th>
@@ -17,6 +17,7 @@
             <th>Idioma</th>
             <th>Actiu</th>
             <th>Partida</th>
+            <th>Acciones</th>
 
         </tr>
         </thead>
@@ -47,7 +48,8 @@
 
         <tr>
 
-            <td><a href={{ path('jugador_new')}}>Nuevo Jugador</a><br/><a href={{ path('partida_list')}}>Volver ha Partidas</a></td>
+            <td colspan="10"><a href={{ path('partida_list')}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/return.png') }}" width="50" height="50"></a></td>
+            <td><a href={{ path('jugador_new')}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></td>
         </tr>
         </tfoot>
     </table>
