@@ -15,7 +15,8 @@ class JocsController extends Controller
         $joc = new Joc();
         $form = $this->createForm(new JocsType(),$joc,array(
             'action' => $this->generateUrl('joc_new'),
-            'method' => 'POST'));
+            'method' => 'POST',
+            'attr'=>array('id' => 'contact')));
        if($request->getMethod() == 'POST') {
            $em = $this->getDoctrine()->getManager();
 
@@ -61,6 +62,7 @@ class JocsController extends Controller
         $form = $this->createForm(new JocsType(),$joc,array(
             'action' => $this->generateUrl('joc_edit',array('id'=>$id)),
             'method' => 'PUT',
+            'attr'=>array('id' => 'contact')
 
 
         ));

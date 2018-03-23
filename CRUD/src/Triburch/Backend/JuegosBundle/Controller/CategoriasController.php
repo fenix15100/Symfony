@@ -19,7 +19,10 @@ class CategoriasController extends Controller
         $categoria = new Categoria();
         $form = $this->createForm(new CategoriasType(),$categoria,array(
             'action' => $this->generateUrl('categoria_new'),
-            'method' => 'POST'));
+            'method' => 'POST',
+            'attr'=>array('id' => 'contact'))
+
+        );
         if($request->getMethod() == 'POST')
         {
 
@@ -49,7 +52,7 @@ class CategoriasController extends Controller
         $categorias = $em->getRepository('TriburchBackendJuegosBundle:Categoria')->findAll();
 
         return $this->render('TriburchBackendJuegosBundle:Categorias:list.html.twig', array('categorias'=>$categorias));
-        //return new Response('<pre>'.var_dump($categorias).'</pre>');
+
     }
 
 
@@ -63,6 +66,7 @@ class CategoriasController extends Controller
         $form = $this->createForm(new CategoriasType(),$categoria,array(
             'action' => $this->generateUrl('categoria_edit',array('id'=>$id)),
             'method' => 'PUT',
+            'attr'=>array('id' => 'contact')
 
 
         ));

@@ -14,7 +14,9 @@ class JugadorsController extends Controller
         $jugador = new Jugador();
         $form = $this->createForm(new JugadorsType(),$jugador,array(
             'action' => $this->generateUrl('jugador_new'),
-            'method' => 'POST'));
+            'method' => 'POST',
+            'attr'=>array('id' => 'contact')
+        ));
         if($request->getMethod() == 'POST') {
             $em = $this->getDoctrine()->getManager();
 
@@ -76,6 +78,7 @@ class JugadorsController extends Controller
         $form = $this->createForm(new JugadorsType(),$jugador,array(
             'action' => $this->generateUrl('jugador_edit',array('id'=>$id)),
             'method' => 'PUT',
+            'attr'=>array('id' => 'contact')
         ));
 
         if($request->getMethod() == 'PUT') {

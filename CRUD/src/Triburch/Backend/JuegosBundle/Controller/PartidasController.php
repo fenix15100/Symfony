@@ -14,7 +14,8 @@ class PartidasController extends Controller
         $partida = new Partida();
         $form = $this->createForm(new PartidasType(),$partida,array(
             'action' => $this->generateUrl('partida_new'),
-            'method' => 'POST'));
+            'method' => 'POST','attr'=>array('id' => 'contact')
+        ));
         if($request->getMethod() == 'POST') {
             $em = $this->getDoctrine()->getManager();
 
@@ -79,6 +80,7 @@ class PartidasController extends Controller
         $form = $this->createForm(new PartidasType(),$partida,array(
             'action' => $this->generateUrl('partida_edit',array('id'=>$id)),
             'method' => 'PUT',
+            'attr'=>array('id' => 'contact')
 
 
         ));
