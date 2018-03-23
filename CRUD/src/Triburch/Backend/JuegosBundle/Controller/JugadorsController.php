@@ -56,7 +56,6 @@ class JugadorsController extends Controller
         }
         return $this->render('TriburchBackendJuegosBundle:Jugadors:show.html.twig', array('form' => $form->createView()));
 
-
     }
 
     public function listAction()
@@ -122,12 +121,13 @@ class JugadorsController extends Controller
 
     }
 
-    public function eraseAction($id){
+    public function eraseAction($id)
+    {
 
 
         $em = $this->getDoctrine()->getManager();
 
-        $jugador= $em->getRepository('TriburchBackendJuegosBundle:Jugador')->find($id);
+        $jugador = $em->getRepository('TriburchBackendJuegosBundle:Jugador')->find($id);
 
         $em->remove($jugador);
         $em->flush();
@@ -135,6 +135,8 @@ class JugadorsController extends Controller
         return $this->redirect($this->generateURL('jugador_list'));
 
     }
+
+
 
 
 }

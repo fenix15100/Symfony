@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="es" datatype="plaintext" original="file.ext">
+            <body>
+
+                <!-- Lista Categorias-->
+            <trans-unit id="1">
+                <source>__title.list.Category</source>
+                <target>Lista de Categorias</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>__name.list.Category</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>__work.list.Category</source>
+                <target>Trabaja</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>__childs.list.Category</source>
+                <target>Hijos(Juegos)</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>__actions.list.Category</source>
+                <target>Acciones</target>
+            </trans-unit>
+
+                <!--Formulario Categorias-->
+
+            <trans-unit id="6">
+                <source>__name.show.Category</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>__work.show.Category</source>
+                <target>Trabaja</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>__submmit.show.Category</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+                <!--Lista Juegos-->
+            <trans-unit id="9">
+                <source>__title.list.Games</source>
+                <target>Lista de Juegos</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>__name.list.Games</source>
+                <target>Nombre</target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>__title.list.Games</source>
+                <target>Lista de Juegos</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>__name.list.Games</source>
+                <target>Acciones</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>__title.list.Games</source>
+                <target>Lista de Juegos</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>__name.list.Games</source>
+                <target>Acciones</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

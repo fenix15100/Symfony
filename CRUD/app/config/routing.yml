@@ -1,6 +1,9 @@
 triburch_backend_juegos:
     resource: "@TriburchBackendJuegosBundle/Resources/config/routing.yml"
-    prefix:   /Triburch
+    prefix:   /{_locale}/Triburch
+    requirements:
+            _locale: en|es|ca
+
 
 da_wpepe:
     resource: "@DAWpepeBundle/Resources/config/routing.yml"
