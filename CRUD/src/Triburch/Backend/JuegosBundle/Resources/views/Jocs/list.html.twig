@@ -1,18 +1,18 @@
 {% extends "@TriburchBackendJuegos/layout.html.twig" %}
 
-{% block title %}Lista Jocs{% endblock %}
+{% block title %}{% trans %}__title.list.Games{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Listado de Jocs</h1>
+    <h1>{% trans %}__title.list.Games{% endtrans %}</h1>
     <table border="1" style="overflow: auto">
         <thead class="tbl-header">
         <tr>
             <th>ID</th>
-            <th>Nom</th>
-            <th>Imatge</th>
-            <th>Categoria</th>
-            <th>Hijos(Partidas)</th>
-            <th>Acciones</th>
+            <th>{% trans %}__name.list.Games{% endtrans %}</th>
+            <th>{% trans %}__image.list.Games{% endtrans %}</th>
+            <th>{% trans %}__category.list.Games{% endtrans %}</th>
+            <th>{% trans %}__childs.list.Games{% endtrans %}</th>
+            <th>{% trans %}__actions.list.Games{% endtrans %}</th>
 
         </tr>
         </thead>
@@ -23,7 +23,7 @@
                 <td>{{ joc.nom }}</td>
                 <td>{{ joc.imatge }}</td>
                 <td>{{ joc.categoria }}</td>
-                <td><a href="{{ path('joc_list_children',{'id': joc.id})}}">Ver Hijos</a>
+                <td><a href="{{ path('joc_list_children',{'id': joc.id})}}">{% trans %}__show_childs.list{% endtrans %}</a>
                 <td><a href={{ path('joc_edit',{'id': joc.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
                     <form action="{{ path('joc_erase',{'id': joc.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />

@@ -3,21 +3,21 @@
 {% block title %}Lista Jugadores{% endblock %}
 
 {% block body %}
-    <h1>Listado de Jugadores</h1>
+    <h1>{% trans %}__title.list.Players{% endtrans %}</h1>
     <table border="1"  style="overflow: auto">
         <thead>
         <tr>
             <th>ID</th>
-            <th>Nom</th>
-            <th>Cognom 1</th>
-            <th>Cognom 2</th>
-            <th>Data Naixement</th>
-            <th>Diagnostic</th>
-            <th>Nick</th>
-            <th>Idioma</th>
-            <th>Actiu</th>
-            <th>Partida</th>
-            <th>Acciones</th>
+            <th>{% trans %}__name.list.Players{% endtrans %}</th>
+            <th>{% trans %}__lastname1.list.Players{% endtrans %}</th>
+            <th>{% trans %}__lastname2.list.Players{% endtrans %}</th>
+            <th>{% trans %}__birth_date.list.Players{% endtrans %}</th>
+            <th>{% trans %}__diagnostic.list.Players{% endtrans %}</th>
+            <th>{% trans %}__nick.list.Players{% endtrans %}</th>
+            <th>{% trans %}__idioma.list.Players{% endtrans %}</th>
+            <th>{% trans %}__active.list.Players{% endtrans %}</th>
+            <th>{% trans %}__Partida.list.Players{% endtrans %}</th>
+            <th>{% trans %}__actions.list.Players{% endtrans %}</th>
 
         </tr>
         </thead>

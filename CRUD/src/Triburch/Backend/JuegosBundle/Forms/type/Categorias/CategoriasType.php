@@ -9,9 +9,9 @@ class CategoriasType extends AbstractType
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')
-            ->add('treballa')
-            ->add('submit','submit',array('label'=>'Enviar'));
+        $builder->add('nom','text',array('label'=>'__name.show.Category'))
+            ->add('treballa','text',array('label'=>'__work.show.Category'))
+            ->add('submit','submit',array('label'=>'__submmit.show.Category'));
 
     }
     public function getName()

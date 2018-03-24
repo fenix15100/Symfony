@@ -45,7 +45,7 @@
             <!--Lista Juegos-->
             <trans-unit id="9">
                 <source>__title.list.Games</source>
-                <target>Lista de Jocs</target>
+                <target>Llista de Jocs</target>
             </trans-unit>
             <trans-unit id="10">
                 <source>__name.list.Games</source>
@@ -284,6 +284,14 @@
             <trans-unit id="61">
                 <source>__submmit.show.Players</source>
                 <target>Enviar</target>
+            </trans-unit>
+
+
+            <!--String Ver hijos AKA CHAPUZA-->
+
+            <trans-unit id="62">
+                <source>__show_childs.list</source>
+                <target>Veure Fills</target>
             </trans-unit>
 
 

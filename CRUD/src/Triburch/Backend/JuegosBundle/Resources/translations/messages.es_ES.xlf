@@ -287,6 +287,15 @@
             </trans-unit>
 
 
+
+            <!--String Ver hijos AKA CHAPUZA-->
+
+            <trans-unit id="62">
+                <source>__show_childs.list</source>
+                <target>Ver Hijos</target>
+            </trans-unit>
+
+
         </body>
     </file>
 </xliff>

@@ -5,16 +5,16 @@
 {% block content %}
 
 
-    <h1>Listado de Categorias</h1>
+    <h1>{% trans %}__title.list.Category{% endtrans %}</h1>
 
         <table border="1" style="overflow: auto">
             <thead class="tbl-header">
             <tr>
                 <th>ID</th>
-                <th>Nom</th>
-                <th>Treballa</th>
-                <th>Hijos(Jocs)</th>
-                <th>Acciones</th>
+                <th>{% trans %}__name.list.Category{% endtrans %}</th>
+                <th>{% trans %}__work.list.Category{% endtrans %}</th>
+                <th>{% trans %}__childs.list.Category{% endtrans %}</th>
+                <th>{% trans %}__actions.list.Category{% endtrans %}</th>
 
             </tr>
             </thead>
@@ -24,7 +24,7 @@
                     <td>{{ categoria.id }}</td>
                     <td>{{ categoria.nom }}</td>
                     <td>{{ categoria.treballa }}</td>
-                    <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}">Ver Hijos</a>
+                    <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}">{% trans %}__show_childs.list{% endtrans %}</a>
                     <td><a href={{ path('categoria_edit',{'id': categoria.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}"width="30" height="30"></a>
                         <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
                             <input type="hidden" name="_method" value="DELETE" />

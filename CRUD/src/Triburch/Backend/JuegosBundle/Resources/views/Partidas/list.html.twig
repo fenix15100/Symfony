@@ -1,24 +1,24 @@
 {% extends "@TriburchBackendJuegos/layout.html.twig" %}
 
-{% block title %}Lista Partidas{% endblock %}
+{% block title %}{% trans %}__title.list.Partida{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Listado de Partidas</h1>
+    <h1>{% trans %}__title.list.Partida{% endtrans %}</h1>
     <table border="1" style="overflow: auto">
         <thead>
         <tr>
             <th>ID</th>
-            <th>Quan</th>
-            <th>Temps</th>
-            <th>Clicks</th>
-            <th>Encerts</th>
-            <th>Errades</th>
-            <th>Dificultad</th>
-            <th>Velocitatat</th>
+            <th>{% trans %}__when.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__time.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__clics.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__success.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__fail.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__difficulty.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__velocity.list.Partida{% endtrans %}</th>
             <th>So</th>
-            <th>Joc</th>
-            <th>Hijos(Jugadors)</th>
-            <th>Acciones</th>
+            <th>{% trans %}__Game.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__childs.list.Partida{% endtrans %}</th>
+            <th>{% trans %}__actions.list.Partida{% endtrans %}</th>
 
         </tr>
         </thead>
@@ -35,7 +35,7 @@
                 <td>{{ partida.velocitat }}</td>
                 <td>{{ partida.so }}</td>
                 <td>{{ partida.joc }}</td>
-                <td><a href={{ path('partida_list_children',{'id': partida.id})}}>Ver Hijos</a>
+                <td><a href={{ path('partida_list_children',{'id': partida.id})}}>{% trans %}__show_childs.list{% endtrans %}</a>
                 <td><a href={{ path('partida_edit',{'id': partida.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
                     <form action="{{ path('partida_erase',{'id': partida.id})}}" method="post">
                         <input type="hidden" name="_method" value="DELETE" />
