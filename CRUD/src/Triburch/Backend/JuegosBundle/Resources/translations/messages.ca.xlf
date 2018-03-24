@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="ca" datatype="plaintext" original="file.ext">
+        <body>
+
+            <!-- Lista Categorias-->
+            <trans-unit id="1">
+                <source>__title.list.Category</source>
+                <target>Llista de Categories</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>__name.list.Category</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>__work.list.Category</source>
+                <target>Treballa</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>__childs.list.Category</source>
+                <target>Fills(Jocs)</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>__actions.list.Category</source>
+                <target>Accions</target>
+            </trans-unit>
+
+            <!--Formulario Categorias-->
+
+            <trans-unit id="6">
+                <source>__name.show.Category</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>__work.show.Category</source>
+                <target>Treballa</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>__submmit.show.Category</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+            <!--Lista Juegos-->
+            <trans-unit id="9">
+                <source>__title.list.Games</source>
+                <target>Lista de Jocs</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>__name.list.Games</source>
+                <target>Nom</target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>__image.list.Games</source>
+                <target>Imatge</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>__category.list.Games</source>
+                <target>Categoria</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>__childs.list.Games</source>
+                <target>Fills(Partides)</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>__actions.list.Games</source>
+                <target>Accions</target>
+            </trans-unit>
+
+
+
+
+
+            <!--Formulario Juegos-->
+
+            <trans-unit id="15">
+                <source>__name.show.Games</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>__image.show.Games</source>
+                <target>Imatge</target>
+            </trans-unit>
+
+            <trans-unit id="17">
+                <source>__category.show.Games</source>
+                <target>Categoria</target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>__submmit.show.Games</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+
+
+            <!-- Lista Partidas-->
+            <trans-unit id="19">
+                <source>__title.list.Partida</source>
+                <target>Llista de Partides</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>__when.list.Partida</source>
+                <target>Quan</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>__time.list.Partida</source>
+                <target>Temps</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>__clics.list.Partida</source>
+                <target>Clicks</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>__success.list.Partida</source>
+                <target>Encerts</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>__fail.list.Partida</source>
+                <target>Errades</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>__difficulty.list.Partida</source>
+                <target>Dificultad</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>__velocity.list.Partida</source>
+                <target>Velocitad</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>__Game.list.Partida</source>
+                <target>Joc</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>__childs.list.Partida</source>
+                <target>Fills(Jugadors)</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>__actions.list.Partida</source>
+                <target>Accions</target>
+            </trans-unit>
+
+
+
+
+            <!--Formulario Partidas-->
+            <trans-unit id="30">
+                <source>__when.show.Partida</source>
+                <target>Quan</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>__time.show.Partida</source>
+                <target>Temps</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>__clics.show.Partida</source>
+                <target>Clicks</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>__success.show.Partida</source>
+                <target>Encerts</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>__fail.show.Partida</source>
+                <target>Errades</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>__difficulty.show.Partida</source>
+                <target>Dificultad</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>__velocity.show.Partida</source>
+                <target>Velocitad</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>__Game.show.Partida</source>
+                <target>Joc</target>
+            </trans-unit>
+
+            <trans-unit id="38">
+                <source>__submmit.show.Partida</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+            <!-- Lista Jugadores-->
+            <trans-unit id="39">
+                <source>__title.list.Players</source>
+                <target>Llista de Jugadors</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>__name.list.Players</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>__lastname1.list.Players</source>
+                <target>Cognom 1</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>__lastname2.list.Players</source>
+                <target>Cognom 2</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>__birth_date.list.Players</source>
+                <target>Data de Naixement</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>__diagnostic.list.Players</source>
+                <target>Diagnostic</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>__nick.list.Players</source>
+                <target>Nick</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>__idioma.list.Players</source>
+                <target>Idioma</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>__active.list.Players</source>
+                <target>Actiu</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>__Partida.list.Players</source>
+                <target>Partida</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>__actions.list.Players</source>
+                <target>Accions</target>
+            </trans-unit>
+
+
+
+            <!-- Formulario Jugadores-->
+            <trans-unit id="50">
+                <source>__title.show.Players</source>
+                <target>Llista de Jugadors</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>__name.show.Players</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>__lastname1.show.Players</source>
+                <target>Cognom 1</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>__lastname2.show.Players</source>
+                <target>Cognom 2</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>__birth_date.show.Players</source>
+                <target>Data de Naixement</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>__diagnostic.show.Players</source>
+                <target>Diagnostic</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>__nick.show.Players</source>
+                <target>Nick</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>__idioma.show.Players</source>
+                <target>Idioma</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>__active.show.Players</source>
+                <target>Actiu</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>__Partida.show.Players</source>
+                <target>Partida</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>__actions.show.Players</source>
+                <target>Accions</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>__submmit.show.Players</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

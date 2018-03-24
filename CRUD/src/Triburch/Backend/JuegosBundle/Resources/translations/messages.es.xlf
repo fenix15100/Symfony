@@ -53,21 +53,239 @@
             </trans-unit>
 
             <trans-unit id="11">
-                <source>__title.list.Games</source>
-                <target>Lista de Juegos</target>
+                <source>__image.list.Games</source>
+                <target>Imagen</target>
             </trans-unit>
             <trans-unit id="12">
-                <source>__name.list.Games</source>
-                <target>Acciones</target>
+                <source>__category.list.Games</source>
+                <target>Categoria</target>
             </trans-unit>
             <trans-unit id="13">
-                <source>__title.list.Games</source>
-                <target>Lista de Juegos</target>
+                <source>__childs.list.Games</source>
+                <target>Hijos(Partidas)</target>
             </trans-unit>
             <trans-unit id="14">
-                <source>__name.list.Games</source>
+                <source>__actions.list.Games</source>
                 <target>Acciones</target>
             </trans-unit>
+
+
+
+
+
+            <!--Formulario Juegos-->
+
+            <trans-unit id="15">
+                <source>__name.show.Games</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>__image.show.Games</source>
+                <target>Imagen</target>
+            </trans-unit>
+
+            <trans-unit id="17">
+                <source>__category.show.Games</source>
+                <target>Categoria</target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>__submmit.show.Games</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+
+
+            <!-- Lista Partidas-->
+            <trans-unit id="19">
+                <source>__title.list.Partida</source>
+                <target>Lista de Partidas</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>__when.list.Partida</source>
+                <target>Cuando</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>__time.list.Partida</source>
+                <target>Tiempo</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>__clics.list.Partida</source>
+                <target>Clicks</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>__success.list.Partida</source>
+                <target>Aciertos</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>__fail.list.Partida</source>
+                <target>Fallos</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>__difficulty.list.Partida</source>
+                <target>Dificultad</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>__velocity.list.Partida</source>
+                <target>Velocidad</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>__Game.list.Partida</source>
+                <target>Juego</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>__childs.list.Partida</source>
+                <target>Hijos(Jugadores)</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>__actions.list.Partida</source>
+                <target>Acciones</target>
+            </trans-unit>
+
+
+
+
+            <!--Formulario Partidas-->
+            <trans-unit id="30">
+                <source>__when.show.Partida</source>
+                <target>Cuando</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>__time.show.Partida</source>
+                <target>Tiempo</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>__clics.show.Partida</source>
+                <target>Clicks</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>__success.show.Partida</source>
+                <target>Aciertos</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>__fail.show.Partida</source>
+                <target>Fallos</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>__difficulty.show.Partida</source>
+                <target>Dificultad</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>__velocity.show.Partida</source>
+                <target>Velocidad</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>__Game.show.Partida</source>
+                <target>Juego</target>
+            </trans-unit>
+
+            <trans-unit id="38">
+                <source>__submmit.show.Partida</source>
+                <target>Enviar</target>
+            </trans-unit>
+
+
+
+            <!-- Lista Jugadores-->
+            <trans-unit id="39">
+                <source>__title.list.Players</source>
+                <target>Lista de Jugadores</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>__name.list.Players</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>__lastname1.list.Players</source>
+                <target>Apellido 1</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>__lastname2.list.Players</source>
+                <target>Apellido 2</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>__birth_date.list.Players</source>
+                <target>Fecha Nacimineto</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>__diagnostic.list.Players</source>
+                <target>Diagnostico</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>__nick.list.Players</source>
+                <target>Nick</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>__idioma.list.Players</source>
+                <target>Idioma</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>__active.list.Players</source>
+                <target>Activo</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>__Partida.list.Players</source>
+                <target>Partida</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>__actions.list.Players</source>
+                <target>Acciones</target>
+            </trans-unit>
+
+
+
+            <!-- Formulario Jugadores-->
+            <trans-unit id="50">
+                <source>__title.show.Players</source>
+                <target>Lista de Jugadores</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>__name.show.Players</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>__lastname1.show.Players</source>
+                <target>Apellido 1</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>__lastname2.show.Players</source>
+                <target>Apellido 2</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>__birth_date.show.Players</source>
+                <target>Fecha Nacimineto</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>__diagnostic.show.Players</source>
+                <target>Diagnostico</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>__nick.show.Players</source>
+                <target>Nick</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>__idioma.show.Players</source>
+                <target>Idioma</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>__active.show.Players</source>
+                <target>Activo</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>__Partida.show.Players</source>
+                <target>Partida</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>__actions.show.Players</source>
+                <target>Acciones</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>__submmit.show.Players</source>
+                <target>Enviar</target>
+            </trans-unit>
+
 
         </body>
     </file>
