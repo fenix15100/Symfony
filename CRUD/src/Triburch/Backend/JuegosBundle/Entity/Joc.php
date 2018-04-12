@@ -60,12 +60,19 @@ class Joc
      */
     private $partidas;
 
+
+    /**
+     * @ORM\Column(name="array_trans", type="array",nullable=true)
+     *
+     */
+    private $arrayTrans;
     /**
      * Joc constructor.
      */
     public function __construct()
     {
         $this->partidas=new ArrayCollection();
+        $this->arrayTrans=array('es_ES'=>null,'ca'=>null,'fr'=>null,'en'=>null);
 
     }
 
@@ -156,6 +163,26 @@ class Joc
     public function addPartidas(Partida $partida){
         $this->partidas[]=$partida;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getArrayTrans()
+    {
+        return $this->arrayTrans;
+    }
+
+    /**
+     * @param mixed $arrayTrans
+     */
+    public function setArrayTrans(Traductor $arrayTrans)
+    {
+        $this->arrayTrans = $arrayTrans->getArrayTraduction();
+    }
+
+
+
+
     public function __toString(){
         return $this->getNom();
     }

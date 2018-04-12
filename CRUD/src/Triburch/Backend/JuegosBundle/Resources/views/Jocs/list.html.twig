@@ -17,10 +17,18 @@
         </tr>
         </thead>
         <tbody class="tbl-content">
+
+
         {% for joc in jocs %}
+
+
             <tr>
                 <td>{{ joc.id }}</td>
-                <td>{{ joc.nom }}</td>
+                {% if joc.arrayTrans[app.request.getLocale()] is not null %}
+                        <td>{{ joc.arrayTrans[app.request.getLocale()]}}</td>
+                {% else %}
+                        <td>{{ joc.nom }}</td>
+                {% endif %}
                 <td>{{ joc.imatge }}</td>
                 <td>{{ joc.categoria }}</td>
                 <td><a href="{{ path('joc_list_children',{'id': joc.id})}}">{% trans %}__show_childs.list{% endtrans %}</a>
@@ -29,6 +37,7 @@
                         <input type="hidden" name="_method" value="DELETE" />
                         <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
                     </form>
+                    <button><a href={{ path('traductor_new',{'id': joc.id})}}>Traduciones</a></button>
                 </td>
             </tr>
         {% endfor %}

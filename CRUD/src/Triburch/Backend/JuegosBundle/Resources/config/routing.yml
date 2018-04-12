@@ -14,4 +14,8 @@ triburch_backend_juegos_Jugadors:
     resource: "@TriburchBackendJuegosBundle/Resources/config/entitity_routing/Jugadors.yml"
     prefix: /Jugadors
 
+traductor_new:
+     path:     /Traductor/new/{id}
+     defaults: { _controller: TriburchBackendJuegosBundle:Traductor:new }
+
 

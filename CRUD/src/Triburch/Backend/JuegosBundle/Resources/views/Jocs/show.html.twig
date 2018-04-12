@@ -13,5 +13,10 @@
 
     {{ form_start(form)}}
     {{ form_widget(form) }}
+    <br>
+
+    {% if app.request.attributes.get('_route')=='joc_edit' %}
+    <button><a href={{ path('traductor_new',{'id': app.request.attributes.get('_route_params')['id']})}}>Traduciones</a></button>
+    {% endif %}
 
 {% endblock %}
