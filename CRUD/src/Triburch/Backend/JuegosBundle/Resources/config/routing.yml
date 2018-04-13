@@ -14,6 +14,10 @@ triburch_backend_juegos_Jugadors:
     resource: "@TriburchBackendJuegosBundle/Resources/config/entitity_routing/Jugadors.yml"
     prefix: /Jugadors
 
+triburch_backend_juegos_Empresas:
+    resource: "@TriburchBackendJuegosBundle/Resources/config/entitity_routing/Empresas.yml"
+    prefix: /Empresas
+
 traductor_new:
      path:     /Traductor/new/{id}
      defaults: { _controller: TriburchBackendJuegosBundle:Traductor:new }

@@ -1,0 +1,62 @@
+{% extends "@TriburchBackendJuegos/layout.html.twig" %}
+
+{% block title %}Lista Empresas{% endblock %}
+
+{% block content %}
+
+
+    <h1>{% trans %}Lista empresas{% endtrans %}</h1>
+
+    <table border="1" style="overflow: auto">
+        <thead class="tbl-header">
+        <tr>
+            <th>ID</th>
+            <th>{% trans %}Nombre{% endtrans %}</th>
+            <th>{% trans %}Idioma{% endtrans %}</th>
+            <th>{% trans %}Descripcion{% endtrans %}</th>
+            <th>{% trans %}Created{% endtrans %}</th>
+            <th>{% trans %}Updated{% endtrans %}</th>
+            <th>{% trans %}UserCreated{% endtrans %}</th>
+            <th>{% trans %}UpdateCreate{% endtrans %}</th>
+            <th>{% trans %}Correu{% endtrans %}</th>
+            <th>{% trans %}Adresa{% endtrans %}</th>
+            <th>{% trans %}CP{% endtrans %}</th>
+            <th>{% trans %}Poblacio{% endtrans %}</th>
+            <th>{% trans %}Acciones{% endtrans %}</th>
+        </tr>
+        </thead>
+        <tbody class="tbl-content">
+        {% for empresa in empresas %}
+            <tr>
+                <td>{{ empresa.id }}</td>
+                <td>{{ empresa.nom }}</td>
+                <td>{{ empresa.idioma }}</td>
+                <td>{{ empresa.descripcio }}</td>
+                <td>{{ empresa.created|date }}</td>
+                <td>{{ empresa.updated |date}}</td>
+                <td>{{ empresa.userCreated }}</td>
+                <td>{{ empresa.userUpdated }}</td>
+                <td>{{ empresa.correu }}</td>
+                <td>{{ empresa.adresa }}</td>
+                <td>{{ empresa.cp }}</td>
+                <td>{{ empresa.poblacio }}</td>
+                <td><a href={{ path('empresa_edit',{'id': empresa.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}" width="30" height="30"></a>
+                    <form action="{{ path('empresa_erase',{'id': empresa.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="image" src="{{ asset('bundles/TriburchBakendJuegosBundle/images/delete.png') }}" width="30" height="30" />
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+
+        <tr>
+            <td colspan="5"><a href="{{ path('empresa_new')}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></td>
+        </tr>
+
+        </tfoot>
+
+    </table>
+
+{% endblock %}

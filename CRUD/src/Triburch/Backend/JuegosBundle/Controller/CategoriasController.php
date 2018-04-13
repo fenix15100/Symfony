@@ -3,11 +3,9 @@
 namespace Triburch\Backend\JuegosBundle\Controller;
 
 
-use Doctrine\Common\Collections\ArrayCollection;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 use Triburch\Backend\JuegosBundle\Entity\Categoria;
-use Triburch\Backend\JuegosBundle\Entity\Joc;
 use Triburch\Backend\JuegosBundle\Forms\Type\Categorias\CategoriasType;
 
 class CategoriasController extends Controller

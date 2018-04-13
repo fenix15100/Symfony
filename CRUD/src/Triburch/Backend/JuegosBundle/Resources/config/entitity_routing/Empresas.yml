@@ -1,0 +1,16 @@
+empresa_new:
+    path:     /new
+    defaults: { _controller: TriburchBackendJuegosBundle:Empresas:new }
+
+empresa_list:
+    path:     /
+    defaults: { _controller: TriburchBackendJuegosBundle:Empresas:list }
+
+empresa_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Empresas:edit }
+
+empresa_erase:
+    path:     /erase/{id}
+    defaults: { _controller: TriburchBackendJuegosBundle:Empresas:erase }
+    methods:    [DELETE]

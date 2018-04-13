@@ -24,7 +24,7 @@
                     <td>{{ categoria.id }}</td>
                     <td>{{ categoria.nom }}</td>
                     <td>{{ categoria.treballa }}</td>
-                    <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}">{% trans %}__show_childs.list{% endtrans %}</a>
+                    <td><a href="{{ path('categoria_list_children',{'id': categoria.id})}}">{% trans %}__show_childs.list{% endtrans %}</a></td>
                     <td><a href={{ path('categoria_edit',{'id': categoria.id})}}><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/edit.png') }}"width="30" height="30"></a>
                         <form action="{{ path('categoria_erase',{'id': categoria.id})}}" method="post">
                             <input type="hidden" name="_method" value="DELETE" />
@@ -37,7 +37,7 @@
             <tfoot>
 
             <tr>
-                <td colspan="5"><a href="{{ path('categoria_new')}}"><a href="{{ path('categoria_new')}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></a></td>
+                <td colspan="5"><a href="{{ path('categoria_new')}}"><img src="{{ asset('bundles/TriburchBakendJuegosBundle/images/add.png') }}" width="30" height="30"></a></td>
             </tr>
 
             </tfoot>

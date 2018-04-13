@@ -39,13 +39,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="symfony: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="symfony: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="joc: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -53,7 +46,32 @@
     <favorites_list name="CRUD" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="EmpresaType.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Empresas/EmpresaType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+              <folding>
+                <element signature="e#69#109#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoriasType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Categorias/CategoriasType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#69#109#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,23 +87,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Jocs.yml" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Partidas.yml" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/type/Jocs/JocsType.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/type/Partidas/PartidasType.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/type/Categorias/CategoriasType.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/JocRepository.php" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Alumne.php" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Articles.php" />
-        <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Entity/Comments.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/JugadoresController.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Categoria.php" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Jugador.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Partida.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/type/Jugadors/JugadorsType.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/bundles/TriburchBakendJuegosBundle/css/main.css" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/CategoriasController.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/forms.html.twig" />
         <option value="$PROJECT_DIR$/web/bundles/TriburchBakendJuegosBundle/css/forms.css" />
@@ -99,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Categorias/CategoriasType.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/translations/messages.es_ES.xlf" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/translations/messages.en.xlf" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Jocs/JocsType.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/translations/messages.ca.xlf" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Jugadors/list.html.twig" />
@@ -111,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Alumnes/list.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Traductores/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Traductores/CategoriasType.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Traductor.php" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Traductores/TraductoresType.php" />
@@ -120,6 +123,21 @@
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Jocs/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Jocs/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/JocsController.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/clsAdreces.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/EmpresaRepository.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValCPosValidator.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValCPos.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValIdioma.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValIdiomaValidator.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Empresa.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Empresas.yml" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/CategoriasController.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/EmpresasController.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Empresas/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Empresas/EmpresaType.php" />
+        <option value="$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Empresas/list.html.twig" />
       </list>
     </option>
   </component>
@@ -231,6 +249,24 @@
               <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Forms" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -242,6 +278,90 @@
               <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Forms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Type" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Forms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Type" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Categorias" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Forms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Type" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Empresas" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="entitity_routing" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Categorias" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUD" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Triburch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JuegosBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Empresas" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -262,11 +382,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Controller" />
+      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Forms\Type\Empresas" />
+      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Validators" />
+      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Entity" />
       <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Forms\Type\Traductores" />
-      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Resources\views\Traductores" />
-      <recent name="C:\GIT\Symfony\CRUD\web\bundles\DAWpepeBundle" />
-      <recent name="C:\GIT\Symfony\CRUD\src\DAW\pepeBundle\Resources\views" />
-      <recent name="C:\GIT\Symfony\CRUD\src\Triburch\Backend\JuegosBundle\Resources\views\Partidas" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GIT\Symfony\CRUD\web\bundles\TriburchBakendJuegosBundle\js" />
@@ -403,12 +523,12 @@
       <workItem from="1522082695737" duration="1641000" />
       <workItem from="1523045343198" duration="599000" />
       <workItem from="1523563401045" duration="10839000" />
-      <workItem from="1523659019130" duration="178000" />
+      <workItem from="1523659019130" duration="4373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158525000" />
+    <option name="totallyTimeSpent" value="162720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,15 +542,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20682302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20682302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21657458" sideWeight="0.510661" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21657458" sideWeight="0.5346482" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21657458" sideWeight="0.467484" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21657458" sideWeight="0.46535182" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -460,103 +580,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/TriburchBackendJuegosBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/DIAGRAMA_R-E/symfony.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormTypeInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Jugadors/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Partidas/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="111" lean-forward="true" selection-start-line="37" selection-start-column="111" selection-end-line="37" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/JugadorsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Jocs/JocsType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="72" lean-forward="false" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Partidas/PartidasType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="74" lean-forward="false" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR5 - Jocs adaptats primeres taules_FranCamacho/Entities/Jugador.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/TriburchBakendJuegosBundle/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/DAWpepeBundle/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAW/pepeBundle/Resources/views/Alumnes/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-203">
@@ -575,6 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="104" column="74" lean-forward="false" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -582,13 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Categoria.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1854">
-          <caret line="134" column="21" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -603,13 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -631,6 +642,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,38 +668,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Traductores/list.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/CategoriasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="64" column="92" lean-forward="false" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Categorias.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Categorias/CategoriasType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,6 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="90" column="115" lean-forward="false" selection-start-line="90" selection-start-column="115" selection-end-line="90" selection-end-column="115" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,6 +724,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="74" column="80" lean-forward="false" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+          <folding>
+            <element signature="e#56#104#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -752,6 +741,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="87" column="41" lean-forward="false" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,6 +751,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#60#117#0#PHP" expanded="false" />
+            <element signature="e#453#486#1#PHP" expanded="false" />
+            <element signature="e#1267#1300#1#PHP" expanded="false" />
+            <element signature="e#1555#1611#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,6 +795,205 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/EmpresaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValIdiomaValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#61#104#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValIdioma.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValCPosValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#60#103#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/Constraints/Length.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/clsAdreces.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/TriburchBackendJuegosBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Categorias.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/CategoriasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Controller/EmpresasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="80" column="52" lean-forward="false" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+          <folding>
+            <element signature="e#60#117#0#PHP" expanded="false" />
+            <element signature="e#506#519#1#PHP" expanded="false" />
+            <element signature="e#1006#1020#1#PHP" expanded="false" />
+            <element signature="e#1077#1130#0#PHP" expanded="false" />
+            <element signature="e#1310#1347#1#PHP" expanded="false" />
+            <element signature="e#1391#1444#0#PHP" expanded="false" />
+            <element signature="e#1654#1691#1#PHP" expanded="false" />
+            <element signature="e#1816#1830#0#PHP" expanded="false" />
+            <element signature="e#2332#2346#1#PHP" expanded="false" />
+            <element signature="e#2405#2458#0#PHP" expanded="false" />
+            <element signature="e#2640#2677#1#PHP" expanded="false" />
+            <element signature="e#2796#2810#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Validators/ValCPos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Empresas/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding>
+            <element signature="e#12#50#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/entitity_routing/Empresas.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="86" lean-forward="false" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Entity/Empresa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3064">
+          <caret line="278" column="55" lean-forward="false" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
+          <folding>
+            <element signature="e#56#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Empresas/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#51#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#50#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Resources/views/Categorias/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="e#12#51#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Categorias/CategoriasType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#69#109#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triburch/Backend/JuegosBundle/Forms/Type/Empresas/EmpresaType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding>
+            <element signature="e#69#109#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
