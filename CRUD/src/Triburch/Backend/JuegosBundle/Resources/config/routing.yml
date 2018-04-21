@@ -22,4 +22,8 @@ traductor_new:
      path:     /Traductor/new/{id}
      defaults: { _controller: TriburchBackendJuegosBundle:Traductor:new }
 
+contact_new:
+     path:     /Contact
+     defaults: { _controller: TriburchBackendJuegosBundle:Contact:new }
+
 
