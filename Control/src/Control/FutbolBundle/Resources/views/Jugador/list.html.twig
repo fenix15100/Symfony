@@ -1,0 +1,41 @@
+{% extends "@ControlFutbol/layout.html.twig" %}
+
+{% block title %}{% trans %}__title.list.Games{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}__title.list.Jugador{% endtrans %}</h1>
+    <table border="1" style="overflow: auto">
+        <thead class="tbl-header">
+        <tr>
+            <th>ID</th>
+            <th>{% trans %}__nombre.list.Jugador{% endtrans %}</th>
+            <th>{% trans %}__acciones.list.Jugador{% endtrans %}</th>
+
+        </tr>
+        </thead>
+        <tbody class="tbl-content">
+
+
+        {% for jugador in jugadores %}
+
+
+            <tr>
+                <td>{{ jugador.id }}</td>
+                <td>{{ jugador.nom }}</td>
+                <td><a href={{ path('control_futbol_edit',{'id': jugador.id})}}><img src="{{ asset('bundles/ControlFutbolBundle/images/edit.png') }}" width="30" height="30"></a>
+                    <form action="{{ path('control_futbol_delete',{'id': jugador.id})}}" method="post">
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <input type="image" src="{{ asset('bundles/ControlFutbolBundle/images/delete.png') }}" width="30" height="30" />
+                    </form>
+                    <button><a href={{ path('control_futbol_show',{'id': jugador.id})}}>Ver mas</a></button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3"><a href="{{ path('control_futbol_new')}}"><img src="{{ asset('bundles/ControlFutbolBundle/images/add.png') }}" width="30" height="30"></a></td>
+        </tr>
+        </tfoot>
+    </table>
+{% endblock %}

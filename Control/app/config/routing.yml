@@ -1,0 +1,4 @@
+control_futbol:
+    resource: "@ControlFutbolBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}
+    requirements: {_locale: es_ES|ca|fr|en }

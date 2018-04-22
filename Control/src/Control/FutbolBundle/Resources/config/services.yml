@@ -1,0 +1,7 @@
+parameters:
+#    control_futbol.example.class: Control\FutbolBundle\Example
+
+services:
+#    control_futbol.example:
+#        class: %control_futbol.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

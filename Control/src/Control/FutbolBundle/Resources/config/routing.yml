@@ -1,0 +1,32 @@
+control_futbol_new:
+    path:     Jugador/new/{_format}
+    defaults: { _controller: ControlFutbolBundle:Jugador:new,_format: html }
+    methods:    [GET,POST]
+    requirements: {_format: html|xml|json }
+
+
+control_futbol_edit:
+    path:     Jugador/edit/{id}/{_format}
+    defaults: { _controller: ControlFutbolBundle:Jugador:edit,_format: html }
+    methods:    [GET,PUT]
+    requirements: {_format: html|xml|json }
+
+
+control_futbol_delete:
+    path:     Jugador/erase/{id}
+    defaults: { _controller: ControlFutbolBundle:Jugador:erase}
+    methods:    [DELETE]
+
+
+control_futbol_show:
+    path:     Jugador/show/{id}/{_format}
+    defaults: { _controller: ControlFutbolBundle:Jugador:show,_format: html }
+    methods:    [GET]
+    requirements: {_format: html|xml|json }
+
+control_futbol_showall:
+    path:     Jugador/list/{_format}
+    defaults: { _controller: ControlFutbolBundle:Jugador:showall,_format: html }
+    methods:    [GET]
+    requirements: {_format: html|xml|json }
+
