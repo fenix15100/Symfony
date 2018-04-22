@@ -1,0 +1,15 @@
+GET http://localhost:80/app_dev.php/ca/Jugador/new?=
+Accept: */*
+
+###
+
+GET http://localhost/app_dev.php/ca/Jugador/new?=
+Accept: */*
+
+###
+
+GET http://localhost/app_dev.php/ca/Jugador/new/html?=
+Accept: */*
+
+###
+
